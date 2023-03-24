@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <header>
+        <div id="top">
+            <div id="top-span">
+                <span>
+                    <i class="fa fa-phone icon"></i>
+                    Hotline: 0385 462 537
+                </span>
+
+
+                <span>
+                    <i class="fas fa-envelope-open-text icon"></i>
+                    Email:hkdstore@gmail.com
+                </span>
+
+
+                <span>
+                    <i class="fas fa-home icon"></i>
+                    Địa chỉ: đường 3/2, p.Xuân Khánh, q.Ninh Kiều, TP.Cần Thơ
+                </span>
+            </div>
+            <div class="header-r">
+                <span>
+                    <i class="fas fa-user-circle"></i>
+                    <a href="DangNhap.html">Đăng nhập</a> &nbsp; | &nbsp;
+                    <a href="Dangky.html">Đăng xuất</a> &nbsp;| &nbsp;
+                    <a href="#thanh-toan">Thanh toán</a>
+                </span>
+            </div>
+        </div>
+        <div id="header_wapber">
+            <div class="logo">
+                <a href="trangchu.html"><img src="images/logo.png"></a>
+
+            </div>
+            <div class="conten__header">
+                <div class="name__shop">
+                    <h1>HKD Store</h1>
+                </div>
+                <div class="slogan">
+                    <p>Nói không với chất hóa học <br>Vì sức khỏe mọi nhà</p>
+                </div>
+            </div>
+            <div class="icon1">
+                <img src="images/xevanchuyen.png">
+                <div class="info__icon">
+                    <p>
+                        <b>Miển phí vận chuyển</b>
+                        <br>Cho đơn hàng trên 200k
+                    </p>
+                </div>
+            </div>
+            <div class="icon2">
+                <img src="images/dongho2.png">
+                <div class="info__icon">
+                    <p>
+                        <b>Giờ làm việc</b>
+                        <br>T2 - T7 Giờ hành chính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div id="header">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <div id="main-menu">
+                    <ul>
+                        <li><a href="trangchu.html">Trang chủ</a></li>
+                        <li><a href="sanpham.html" class="active">Sản phẩm</a></li>
+                        <li><a href="tintuc.html">Tin tức</a></li>
+                        <li><a href="meohay.html">Mẹo hay</a></li>
+                        <li><a href="lienhe.html">Liên hệ</a></li>
+                    </ul>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Nhập nội dung cần tìm...." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            <button><i class="fas fa-shopping-cart"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <div id="main-sanpham">
+            <!-- SECTION -->
+            <div class="contain">
+                <div class="slide">
+                    <h3 class="boloc_heading">BỘ LỌC</h3>
+
+                    <ul class="list_boloc">
+                        <li class="item_boloc">
+                            <a id="conhang" class="active item_boloc_link" onclick="return hienthi('conhang',this)">Còn
+                                hàng</a>
+                        </li>
+                        <li class="item_boloc">
+                            <a id="giamgia" class="item_boloc_link" onclick="hienthi('giamgia',this)">Giảm giá</a>
+                        </li>
+                        <li class="item_boloc">
+                            <a id="rauxanh" class="item_boloc_link" onclick="hienthi('rauxanh',this)">Rau xanh</a>
+                        </li>
+                        <li class="item_boloc">
+                            <a id="cuqua" class="item_boloc_link" onclick="hienthi('cuqua',this)">Củ quả</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <article>
+                <div class="headline">
+                    <h3>Sản phẩm</h3>
+                </div>
+                <div class="mytabs">
+                    <div class="tab" id="sp_conhang">
+                        <div id="sp1_conhang">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="caibexanh.html" class="product-thumb">
+                                                <img src="images/caibexanh.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">250 gram</a>
+                                            <a href="caibexanh.html" class="product-name">Cải bẹ xanh</a>
+                                            <div href="" class="product-price">8.500₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="bongcaixanh.html" class="product-thumb">
+                                                <img src="images/bongcaixanh.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="bongcaixanh.html" class="product-name">Bông Cải Xanh</a>
+                                            <div href="" class="product-price">20.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="caibedun.html" class="product-thumb">
+                                                <img src="images/caibedun.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">400gram</a>
+                                            <a href="caibedun.html" class="product-name">Cải Bẹ Dún</a>
+                                            <div href="" class="product-price">12.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="caingot.html" class="product-thumb">
+                                                <img src="images/caingot.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">400 gram</a>
+                                            <a href="caingot.html" class="product-name">Cải Ngọt</a>
+                                            <div href="" class="product-price">14.800₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="bapcaitrang.html" class="product-thumb">
+                                                <img src="images/bapcaitrang.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="bapcaitrang.html" class="product-name">Bắp Cải Trắng</a>
+                                            <div href="" class="product-price">17.500₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="caiboxoi.html" class="product-thumb">
+                                                <img src="images/caiboxoi.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="caiboxoi.html" class="product-name">Cải Bó Xôi</a>
+                                            <div href="" class="product-price">19.500₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="raumuong.html" class="product-thumb">
+                                                <img src="images/raumuong.png" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="raumuong.html" class="product-name">Rau muống</a>
+                                            <div href="" class="product-price">18.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="khoqua.html" class="product-thumb">
+                                                <img src="images/khoqua.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="khoqua.html" class="product-name">Khổ qua</a>
+                                            <div href="" class="product-price">20.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="cucaitrang.html" class="product-thumb">
+                                                <img src="images/cucaitrang.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="cucaitrang.html" class="product-name">Củ Cải Trắng</a>
+                                            <div href="" class="product-price">14.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="hanhla.html" class="product-thumb">
+                                                <img src="images/hanhla.png" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">50 gram</a>
+                                            <a href="hanhla.html" class="product-name">Hành Lá</a>
+                                            <div href="" class="product-price">3.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="raubongot.html" class="product-thumb">
+                                                <img src="images/bongot.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">250 gram</a>
+                                            <a href="raubongot.html" class="product-name">Rau Bồ Ngót</a>
+                                            <div href="" class="product-price">7.500₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="caithia.html" class="product-thumb">
+                                                <img src="images/caithia.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="caithia.html" class="product-name">Cải thìa</a>
+                                            <div href="" class="product-price">10.500₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="sp2_conhang">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="sacay.html" class="product-thumb">
+                                                <img src="images/sacay.jpg">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">100 gram</a>
+                                            <a href="sacay.html" class="product-name">Sả cây</a>
+                                            <div href="" class="product-price">2.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="caithao.html" class="product-thumb">
+                                                <img src="images/caithao.jpg">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="caithao.html" class="product-name">Cải thảo</a>
+                                            <div href="" class="product-price">17.500₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="cusuhao.html" class="product-thumb">
+                                                <img src="images/cusuhao.jpg">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="cusuhao.html" class="product-name">Củ su hào</a>
+                                            <div href="" class="product-price">10.500₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="cachua.html" class="product-thumb">
+                                                <img src="images/cachua.png">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="cachua.html" class="product-name">Cà chua</a>
+                                            <div href="" class="product-price">30.000₫</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="tab" id="sp_giamgia">
+                        <div id="sp1_giamgia">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="bido.html" class="product-thumb">
+                                                <img src="images/bido.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="bido.html" class="product-name">Bí đỏ</a>
+                                            <div href="" class="product-price">10.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="rautano.html" class="product-thumb">
+                                                <img src="images/rautano.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="rautano.html" class="product-name">Rau Tần Ô</a>
+                                            <div href="" class="product-price">15.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="dualeo.html" class="product-thumb">
+                                                <img src="images/dualeo.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500gram</a>
+                                            <a href="dualeo.html" class="product-name">Dưa leo</a>
+                                            <div href="" class="product-price">17.500 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="carot.html" class="product-thumb">
+                                                <img src="images/carot.png" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="carot.html" class="product-name">Cà Rốt</a>
+                                            <div href="" class="product-price">14.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="sp2_giamgia">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/caithia.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Rau Cải Thìa</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/sa-cay-556b4d86.jpg">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Sả cây</a>
+                                            <div href="" class="product-price">18.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/cachua.png" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300gram</a>
+                                            <a href="" class="product-name">Cà Chua</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/cu-nghe-8681dc93.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="" class="product-name">Củ nghệ</a>
+                                            <div href="" class="product-price">20.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab" id="sp_rauxanh">
+                        <div id="sp1_rauxanh">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/bongot.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Rau Bồ Ngót</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/rautano.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Rau Tần Ô</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/caithia.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Rau Cải Thìa</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/bongcaixanh.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Bông Cải Xanh</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/caibedun.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300gram</a>
+                                            <a href="" class="product-name">Cải Bẹ Dún</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/caingot.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Rau Cải Ngọt</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/bapcaitrang.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Bắp Cải Trắng</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/caiboxoi.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Cải Bó Xôi</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/hanhla.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Hành Lá</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/rau-kinh-gioi-06a34b73.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Rau kinh giới</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/rau-diep-ca-e13790f1 copy 2.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Rau diếp cá</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/caithao.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Cải Thảo</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="sp2_rauxanh">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/caithao.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Cải Thảo</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/raumuong.png" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="" class="product-name">Rau muống</a>
+                                            <div href="" class="product-price">22.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab" id="sp_cuqua">
+                        <div id="sp1_cuqua">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/bido.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="" class="product-name">Bí đỏ</a>
+                                            <div href="" class="product-price">15.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/cachua.png" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300gram</a>
+                                            <a href="" class="product-name">Cà Chua</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/carot.png" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">300 gram</a>
+                                            <a href="" class="product-name">Cà Rốt</a>
+                                            <div href="" class="product-price">17.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/kho-qua-1d4f1801.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="" class="product-name">Khổ qua</a>
+                                            <div href="" class="product-price">22.800 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/dưa leo.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="" class="product-name">Dưa chuột</a>
+                                            <div href="" class="product-price">17.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="sp2_cuqua">
+                            <ul class="products">
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/bido.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="" class="product-name">Bí đỏ</a>
+                                            <div href="" class="product-price">15.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product-item">
+                                        <div class="product-top">
+                                            <a href="" class="product-thumb">
+                                                <img src="images/cucaitrang.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua ngay</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <a href="" class="product-cat">500 gram</a>
+                                            <a href="" class="product-name">Củ cải trắng</a>
+                                            <div href="" class="product-price">25.000 đ</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="chuyentrang_conhang" class="chuyentrang">
+                        <ul class=list_trang>
+                            <li class="item_trang">
+                                <a id="trang1" class="phan_chuyen active"
+                                    onclick="return chuyen('trang1', this, 'sp_conhang')">1</a>
+                            </li>
+                            <li class="item_trang">
+                                <a id="trang2" class="phan_chuyen"
+                                    onclick="return chuyen('trang2', this, 'sp_conhang')">2</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="chuyentrang_giamgia" class="chuyentrang">
+                        <ul class=list_trang>
+                            <li class="item_trang">
+                                <a id="trang1" class="phan_chuyen active"
+                                    onclick="return chuyen('trang1', this, 'sp_giamgia')">1</a>
+                            </li>
+                            <li class="item_trang">
+                                <a id="trang2" class="phan_chuyen"
+                                    onclick="return chuyen('trang2', this, 'sp_giamgia')">2</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="chuyentrang_rauxanh" class="chuyentrang">
+                        <ul class=list_trang>
+                            <li class="item_trang">
+                                <a id="trang1" class="phan_chuyen active"
+                                    onclick="return chuyen('trang1', this, 'sp_rauxanh')">1</a>
+                            </li>
+                            <li class="item_trang">
+                                <a id="trang2" class="phan_chuyen"
+                                    onclick="return chuyen('trang2', this, 'sp_rauxanh')">2</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="chuyentrang_cuqua" class="chuyentrang">
+                        <ul class=list_trang>
+                            <li class="item_trang">
+                                <a id="trang1" class="phan_chuyen active"
+                                    onclick="return chuyen('trang1', this, 'sp_cuqua')">1</a>
+                            </li>
+                            <li class="item_trang">
+                                <a id="trang2" class="phan_chuyen"
+                                    onclick="return chuyen('trang2', this, 'sp_cuqua')">2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </article>
+            <!-- END SECTION -->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Liên Hệ</h2>
+                <p>Nguồn nguyên liệu chọn lọc từ các vùng trái cây và rau củ quả tươi ngon được trồng ra bởi các nông dân có Tâm,
+                    nặng lòng và đam mê với ngành Nông Nghiệp Việt Nam với tiêu chuẩn an toàn cao, minh bạch, nguồn gốc rõ ràng như:
+                    VietGAP, Global GAP, USDA... 
+                </p>
+            </div>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="trangchu.html">Trang chủ</a></li>
+                    <li><a href="sanpham.html">Sản phẩm</a></li>
+                    <li><a href="tintuc.html">Tin tức</a></li>
+                    <li><a href="meohay.html">Mẹo hay</a></li>
+                    <li><a href="lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2 >Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-home"></i></span>
+                        <span>Đường 3/2 <br />
+                            P.Xuân Khánh, Q.Ninh Kiều, TP.Cần Thơ<br />
+                            Việt Nam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a>0385 462 537</a>
+                            <br />
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope-open-text"></i></span>
+                        <p><a>hkdstore@gmail.com</a></p>
+                   </li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+    </footer>
+    <script src="js/sanpham.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

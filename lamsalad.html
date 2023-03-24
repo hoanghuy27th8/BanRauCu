@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mẹo hay | Làm salad</title>
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <style>
+        .container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .post{
+            width: 70%;
+            
+            float: left;
+            background-color: rgb(28, 72, 90);
+        }
+        .sidebar{
+            float: right;
+            width: 500px;
+            height: 300px;
+           
+            
+        }
+        header{
+                position: relative;
+                background-image: url("images/4936507_space-wallpaper-1-by-twalls.jpg");
+                height: 240px;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                font-size: 60px;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px #147228;
+               
+            }
+        #hender{
+            position: relative;
+            color: #9af152;
+            top: 0px;
+            animation: hender 2s;
+            animation-fill-mode: forwards;
+
+        }
+        
+        @keyframes hender{
+            form{top: 0%;}
+            to{top: 40%;}
+        }
+        
+
+        footer{
+                
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                height: 30px;
+                text-align: center;
+                border-radius:0 0 8px 8px;
+                
+        }
+        #cuahang{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                position: relative;
+                top: 5px;
+                color: #fff;  
+        }
+        
+        #nguon{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                
+            }
+            #nguon:hover{
+                color: yellow;
+                text-decoration: none;
+            }
+
+            #hinhanh{
+                position: absolute;
+                top: 10px;
+                width: 20%;
+                margin-left: auto;
+                right: 5px;
+                animation: hinhanh 2s;
+                animation-fill-mode: forwards
+            }
+            @keyframes hinhanh{
+                form{right:0%;}
+                to{right: 75%;}
+            }
+
+        
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 20px;
+                left:auto;
+                right: auto;
+                top: 20px;
+                color: white;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow:0 0 5px 5px #888;
+            }
+            main{
+                background-color: rgb(28, 72, 90);
+                width: 100%;
+               
+                border-radius:0 ;
+            }        
+            
+            
+        .content{
+            text-align:center;
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+         }
+         #tieude{
+            color: rgb(13, 228, 110);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+        }
+        .nearfooter{
+            text-align: center;
+        }
+        #tieude1{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        p {
+            
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 30px; 
+        }
+        .img{
+            text-align: center;
+        }
+
+        
+        /*reposive*/
+        @media only screen and (max-width:600px) {
+            .container{
+                display: block;
+            }
+            .post{
+                width: 100%;
+                
+            }
+            .sidebar{
+                display: none;  
+            }
+           
+            
+        }
+
+
+        
+        a{
+            position: relative;
+            bottom: 50px;
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        .sp{
+           position: relative;
+           bottom: 300px;
+           color: #db5050;
+           font-weight: bold;
+           
+            
+        }
+        .sp:hover{
+            border: 2px solid rgb(240, 200, 200);
+            background-color: rgb(224, 215, 215);
+            border-radius: 8px;
+            color: rgb(14, 199, 44);
+        }
+        
+        .tin{
+            position: relative;
+            left: 50px;
+            text-align: center;
+            
+            
+        }
+        .tt{
+            
+            background-color: rgb(15, 49, 63);
+            width: 360px;
+            border-radius: 5px;
+            
+        }
+        .dmnn{
+            position: relative;
+            top: 20px;
+            left: 5px;
+            width: 52%;
+            height: 70px;
+            text-align: center;
+            border-bottom: 40px solid #38b653;
+            border-right: 30px solid transparent; 
+        }
+        .decu{
+            position: relative;
+            top: 71px;
+            width: 359px;
+            height: 50px;
+            background-color: rgb(13, 228, 110);
+            border-radius: 5px 5px 0 0;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        c{
+            position: relative;
+            top: 10px;
+        }
+        .dcmua{
+            position: relative;
+            top: 80px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #cachua{
+            width: 350px;
+            height: 250px;
+            border-radius: 5px;
+            transition: transform 1s;
+        }
+        #cachua:hover{
+            transform: scale(0.9);
+        }
+        #minhhoa{
+            border-radius: 5px;
+            transition: transform 1s; 
+        }
+        #minhhoa:hover{
+            transform: scale(0.9);
+        }
+        nav{
+            background-color: #38b653;
+        }
+        #hinhanhsalad{
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            
+        }
+        
+    </style>
+    </head>
+    <body>
+        <header>
+            <div id="hender">Thủ Thuật Nấu Salad Ngon</div>
+        </header>
+        <nav>
+            <div class="content">
+                <div id="content">Thủ Thuật Nấu Salad Ngon</div>
+            </div>
+        </nav>
+        <div id="conten">
+            <img id="hinhanh" src="images/logo1.png" >
+    
+        </div>
+       
+        <main>
+        <div class="container">
+            
+            <div class="post">
+                <ol class="tieude">
+                    <div>
+                    <img id="hinhanhsalad" align="left" src="images/salad.jpg" width="400px" height="250px" ></div>
+                     <p>
+                        Dạo này mình hay tự trách bản thân vì rằng lúc nào cũng muốn chăm sóc page nhưng đợt này bận công việc cứ để nó ủ ê cả tháng. 
+                        Thêm nữa kế hoạch làm web vẫn chưa đi sang giai đoạn thực hiện,
+                        cứ dậm chận ở giai đoạn quyết định.
+                    </p>
+                    
+                    <p>
+                        Bù lại, mình thấy ông anh trai đảm đang hẳn, 
+                        lại có vài món ngon. Hôm trước còn thành công với món cá kho, 
+                        thịt kho tàu, thịt rang cà chua. Đến nỗi mà mình phải bảo mẹ cho anh
+                        ấy vợ đi kẻo ngôi vị nấu ăn ở nhà của mình bị lung lay quá. 
+                        Và đến nỗi mà mình phải để dành đồ ông anh làm cho bữa trưa 
+                        hôm sau đem đi ăn (ngoài lý do trời quá lạnh và mình không tài
+                        nào chui khỏi chăn sớm).
+                    </p>
+                    
+                    <p>
+                        Hôm nay mình phải ngồi tỉ mẩn một lát để viết một công thức mà chắc chắn ông anh mình chưa từng, 
+                        cũng chưa biết làm. Ấy là salad bắp cải. Điều này đủ cho mình 
+                        cười nham hiểm vài phút. (Haiya, ngẫm ra thì lâu lắm bận công việc
+                        mình chẳng được cười “nham hiểm” phút nào).
+                    </p>
+                    <p>
+                        Salad là món tủ của mình.Ý mình salad là món mình luôn yêu thích trong mọi bữa ăn. Hôm trước khi mẹ em Thóc có trổ tài với salad rau trộn thì mình chắc chắn đấy là gợi ý tuyệt vời để mình thực hành làm ngay sau đấy 1 ngày. Thật sự rất dễ để thành công!
+                    </p>
+                    <p>
+                        Lưu ý là tỷ lệ bắp cải sẽ nhiều nhất, các thành phần rau củ khác như cà rốt, xoài, hành tây chỉ là thêm hương thêm hoa. Hoàn toàn có thể bỏ xoài và hành tây, món ăn vẫn giữ được độ ngon, nhất là với những ai không ăn được hành tây. Nếu cho xoài xanh, cũng nhớ cho một ít thôi như cách người ta rắc ruốc lên trên bát xôi. Và đừng quên vừng trắng rang và rau mùi ta.
+                    </p>
+                    <p>
+                        Thêm nữa, khi trộn nộm nếu chưa quen tay nêm gia vị, phần mặn (muối, bột canh) nên cho ít một. Salad hơi ngọt đậm hay hơi chua đậm đều có thể chữa được nhưng hơi mặn thì khó lòng mà cứu chữa.
+                    </p>
+                    <p>
+                        Cuối cùng, bạn hãy bình tĩnh khi nấu ăn và tìm trạng thái bình thản, tập trung của mình trong căn bếp nhé!
+                    </p>
+
+                    
+        
+                    <li id="tieude">Nguyên liệu và chuẩn bị:</li>
+        
+                    <p>
+                        Bắp cải thái lát mỏng, rửa sạch, để ráo nước.
+                        Cà rốt gọt vỏ, rửa sạch, thái/nạo chỉ
+                        Xoài xanh gọt vỏ, thái/nạo chỉ
+                        Hành tây thái lát mỏng, ngâm với nước lạnh để hành bớt hăng. Ngâm vài phút thì trút hành tây ra rổ, để ráo nước. Ướp hành tây với đường và chanh (khi nếm vị ngọt nên đậm hơn vị chua, thành phần gia vị này giúp hành bắt hăng và giữ độ giòn, bớt ra nước) trong khoảng 10-15p thì đổ phần nước tiết ra.
+                        Mùi ta nhặt, rửa sạch, thái khúc dài 1 đốt ngón tay
+                        Ớt đỏ ngọt (loại thuôn dài): thái chỉ
+                        Tôm khô ngâm và rửa sạch, để ráo và rang khô săn lại (thường tôm khô cũng đậm vị rồi nên không cần cho thêm gia vị)
+                        Mè/vừng trắng rang vàng
+                        Tỏi bóc vỏ, đập giập. Vắt chanh vào bát tỏi và ngâm một lát
+                        Đường, bột canh.
+                    </p>
+                   
+                   
+                    <div class="img">
+                        <img id="minhhoa" src="images/saladrauqua-1635240739-5476-1635240778 (1).jpg">
+                    
+                    </div>
+        
+                    <li id="tieude">Let’s cook it!</li>
+                    
+                    <p>
+                        Trong một bát/chậu sạch to, để các loại rau vào (trừ hành tây và mùi ta). Thêm đường và bột canh, trộn đều. Sau khoảng 5 phút, thêm chanh tỏi và trộn tiếp. Sau khoảng 15 phút, lượng rau sẽ óp lại khoảng 1/3.
+                    Đến lúc gần ăn, thêm mùi ta, hành tây và vừng rang trộn đều.
+                    Bày ra đĩa, để tôm khô và ít vừng rang lên trên cùng.
+                    Mấy ngày nay công thức của mình đơn giản hơn: chỉ bắp cải, cà rốt, mùi ta và vừng, trộn với đường, chanh, tỏi, ớt tươi và bột canh. Đúng là Salad bắp cải dịu vị chua mặn, ngọt, giòn, thơm!
+
+                    </p>
+                    
+                    <li id="tieude">Have a nice weekend dears!</li>
+                    <p>
+                        Cứ tranh thủ mùa đông mùa bắp cải mà làm salad rau trộn bạn ạ 😉
+                    </p>
+                    <b>P/s:</b>
+                    <p>
+                        Tại sao lại là salad bắp cải ăn mọi bữa: vì bữa nào có món salad chua ngọt đều dễ ăn cơm, lại giảm độ ngấy của các món ăn nhiều chất béo mùa đông. Bổ sung chất xơ cũng là một việc cực đáng để làm. Nên nhớ là món này có nhiều vitamin nữa :3
+                    </p>
+                    <p>
+                        Tại sao lại là salad bắp cải làm thật nhanh: vì so với dưa bắp cải salad bắp cải thật là nhanh ra thành phẩm, vì so với các loại như su hào, dưa chuột, đu đủ xanh thì rau lại dễ ngấm gia vị hơn, nhanh thấm thía hơn.
+                    </p>
+                    
+                   
+                   
+        
+                <div class="nearfooter">
+                <p id="nearfooter">😉Chúc các bạn thành công😉</p></div>
+                <a href="https://nauvaan.wordpress.com/2013/01/07/salad-bap-cai/" id="nguon"> Nguồn Tại đây</a>
+            </p>
+            </ol>
+            </div>
+            
+
+            <div class="sidebar">
+                
+                    <div class="tin">
+                        <div class="decu"><c>Đề Cử</c></div>
+                        <div class="tt">
+                            
+                            <p class="dmnn"><c class="dcmua">Mua Nhiều</c></p><br><br>
+                            <a id="link" href="cachua.html">
+                                <img id="cachua" src="images/cachua.png">
+                                <a class="sp" href="cachua.html">Cà Chua</a></a>
+                           
+                                <a id="link" href="caibexanh.html">
+                                <img id="cachua" src="images/caibexanh.jpg">
+                                <a class="sp" href="caibexanh.html">Cải Bẹ Xanh</a></a>
+                            
+                                <a id="link" href="caibedun.html">
+                                <img id="cachua" src="images/caibedun.jpg" >
+                                <a class="sp" href="caibedun.html">Cải Bẹ</a></a>
+                            
+                                <a id="link" href="sacay.html">
+                                <img id="cachua" src="images/sacay.jpg">
+                                <a class="sp" class="sp" href="sacay.html">Sả Cây</a></a>
+                            
+                        </div>
+                        
+                    </div>
+                
+            
+        </div>
+        
+        </main>
+        <footer>
+            <a id="cuahang">Cửa hàng rau sạch, chất lượng hàng đầu Việt Nam</a>
+        </footer>
+    </body>
+</html>

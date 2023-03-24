@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKD</title>
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <style>
+        .container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .post{
+            width: 70%;
+            
+            float: left;
+            background-color: rgb(28, 72, 90);
+        }
+        .sidebar{
+            float: right;
+            width: 500px;
+            height: 300px;
+           
+            
+        }
+        header{
+                position: relative;
+                background-image: url("images/4936507_space-wallpaper-1-by-twalls.jpg");
+                height: 240px;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                font-size: 60px;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px #147228;
+               
+            }
+        #hender{
+            position: relative;
+            color: #9af152;
+            top: 0px;
+            animation: hender 2s;
+            animation-fill-mode: forwards;
+
+        }
+        
+        @keyframes hender{
+            form{top: 0%;}
+            to{top: 40%;}
+        }
+        
+
+        footer{
+                
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                height: 30px;
+                text-align: center;
+                border-radius:0 0 8px 8px;
+                
+        }
+        #cuahang{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                position: relative;
+                top: 5px;
+                color: #fff;  
+        }
+        
+        #nguon{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                
+            }
+            #nguon:hover{
+                color: yellow;
+                text-decoration: none;
+            }
+
+            #hinhanh{
+                position: absolute;
+                top: 10px;
+                width: 20%;
+                margin-left: auto;
+                right: 5px;
+                animation: hinhanh 2s;
+                animation-fill-mode: forwards
+            }
+            @keyframes hinhanh{
+                form{right:0%;}
+                to{right: 75%;}
+            }
+
+        
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 20px;
+                left:auto;
+                right: auto;
+                top: 20px;
+                color: white;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow:0 0 5px 5px #888;
+            }
+            main{
+                background-color: rgb(28, 72, 90);
+                width: 100%;
+               
+                border-radius:0 ;
+            }        
+            
+            
+        .content{
+            text-align:center;
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+         }
+         #tieude{
+            color: rgb(13, 228, 110);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+        }
+        .nearfooter{
+            text-align: center;
+        }
+        #tieude1{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        p {
+            
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 30px; 
+        }
+        .img{
+            text-align: center;
+        }
+
+        
+        /*reposive*/
+        @media only screen and (max-width:600px) {
+            .container{
+                display: block;
+            }
+            .post{
+                width: 100%;
+                
+            }
+            .sidebar{
+                display: none;  
+            }
+           
+            
+        }
+
+
+        
+        a{
+            position: relative;
+            bottom: 50px;
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        .sp{
+           position: relative;
+           bottom: 300px;
+           color: #db5050;
+           font-weight: bold;
+           
+            
+        }
+        .sp:hover{
+            border: 2px solid rgb(240, 200, 200);
+            background-color: rgb(224, 215, 215);
+            border-radius: 8px;
+            color: rgb(14, 199, 44);
+        }
+        
+        .tin{
+            position: relative;
+            left: 50px;
+            text-align: center;
+            
+            
+        }
+        .tt{
+            
+            background-color: rgb(15, 49, 63);
+            width: 360px;
+            border-radius: 5px;
+            
+        }
+        .dmnn{
+            position: relative;
+            top: 20px;
+            left: 5px;
+            width: 52%;
+            height: 70px;
+            text-align: center;
+            border-bottom: 40px solid #38b653;
+            border-right: 30px solid transparent; 
+        }
+        .decu{
+            position: relative;
+            top: 71px;
+            width: 359px;
+            height: 50px;
+            background-color: rgb(13, 228, 110);
+            border-radius: 5px 5px 0 0;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        c{
+            position: relative;
+            top: 10px;
+        }
+        .dcmua{
+            position: relative;
+            top: 80px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #cachua{
+            width: 350px;
+            height: 250px;
+            border-radius: 5px;
+            transition: transform 1s;
+        }
+        #cachua:hover{
+            transform: scale(0.9);
+        }
+        #minhhoa{
+            border-radius: 5px;
+            transition: transform 1s; 
+        }
+        #minhhoa:hover{
+            transform: scale(0.9);
+        }
+        nav{
+            background-color: #38b653;
+        }
+        #hinhanhsalad{
+            
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            
+        }
+        #vto{
+            font-size: 190px;
+            color: rgb(13, 228, 110);
+        }
+        b{
+            font-size: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div id="hender">Bảo quản rau trong tủ lạnh</div>
+        </header>
+        <nav>
+            <div class="content">
+                <div id="content">Mẹo bảo quản rau trong tủ lạnh cả tuần mà vẫn tươi bằng 1 tời giấy</div>
+            </div>
+        </nav>
+        <div id="conten">
+            <img id="hinhanh" src="images/logo1.png" >
+    
+        </div>
+       
+        <main>
+        <div class="container">
+            
+            <div class="post">
+                <ol class="tieude">
+                    <div>
+                    <img id="hinhanhsalad" align="left" src="images/meo-bao-quan-rau-trong-tu-lanh-ca-tuan-ma-van-tuoi-bang-1-toi-giay 1.jpg" width="400px" height="250px" ></div>
+                    
+                    <p>
+                        <b id="vto">V</b>ới cuộc sống hiện đại, bạn rộn như ngày nay thì thói quen đi chợ, siêu thị 1 lần vào ngày cuối tuần để mua thức ăn dự trữ cho 2-3 
+                        ngày hoặc cả tuần là vô cùng phổ biến. Mỗi loại rau, củ quả có cách bảo quản riêng với những điều kiện ẩm khác nhau. Bài viết dưới 
+                        của đây Điện Máy Chợ Lớn sẽ hướng dẫn cho bạn các bước bảo quan rau trong tủ lạnh tươi lâu cả tuần đơn giản bằng 1 tờ giấy.
+                    
+                    </p>
+                    
+                    <b>Cách bảo quản rau củ quả mà mọi người hay dùng</b>
+                    <li id="tieude">Loại bỏ những phần hỏng của rau củ quả</li>
+        
+                    <p>
+                        Những phần bị hỏng sẽ sinh ra khí ethylene, nấm mốc sẽ lây lan và làm hư những thực phẩm khác.
+                    </p>
+                   
+                   
+                    <div class="img">
+                        <img id="minhhoa" src="images/meo-bao-quan-rau-trong-tu-lanh-ca-tuan-ma-van-tuoi-bang-1-toi-giay 1.jpg">
+                    
+                    </div>
+        
+                    <li id="tieude">Không rửa rau củ quả trước khi cho vào tủ lạnh</li>
+                    <p>
+                        Không nên rửa rau củ trước khi cho vào tủ lạnh vì độ ẩm quá nhiều khiến rau dễ bị biến màu, hư hỏng. Nếu bạn có thói quen rửa rau thì phải làm rau củ quả thật ráo nước rồi mới cho vào tủ lạnh. Bạn cũng không nên cắt nhỏ rau củ quả làm sẽ mất đi các chất dinh dưỡng thiết yếu và tạo điều kiện cho vi khuẩn phát triển.
+                    </p>
+                    <p>
+                        Đối với củ cải, cà rốt, xu hào... bạn nên cắt bớt ngọn trước khi cho vào tủ lạnh.
+                    </p>
+
+                    <li id="tieude">Phân loại rau củ trước khi cho vào tủ lạnh</li>
+                    <p>
+                        Mỗi loại rau củ đều có cách bảo quản riêng vì thời gian và điều kiện độ ẩm bảo quản khác nhau. Bạn nên phân loại cụ thể rau, củ và cho vào túi riêng trước khi cho vào tủ lạnh.
+                    </p>
+    
+                    <li id="tieude">Dùng túi ni-lon để bọc thực phẩm</li>
+                    
+                    
+                    <p>
+                        Rau củ quả muốn tươi tươi thì cần độ ẩm từ 80-95% nhưng tủ lạnh thường có độ ẩm khoảng 65%. Vì vậy bạn nên cho chúng vào túi ni-lon để ngăn sự bay hơi nước, độ ẩm sẽ cao hơn, giữ được độ tươi lâu hơn. Túi ni-lon mà bạn sử dụng nên được làm từ chất liệu PP để đảm bảo an toàn sức khỏe cho bạn và gia đình.
+                    </p>
+    
+                    <li id="tieude">Nhiệt độ bảo quản thích hợp</li>
+                    
+                    <p>
+                        Đảm bảo nhiệt độ trong ngăn mát tủ lạnh luôn ở mức từ 1-4 độ C. Nếu nhiệt độ trên 4 độ C thì vi khuẩn sinh sôi phát triển, nếu nhiệt độ dưới 1 độ thì rau củ quả bị đóng băng, mất chất dinh dưỡng.
+                    </p>
+    
+                    <div class="img">
+                        <img id="minhhoa" src="images/meo-bao-quan-rau-trong-tu-lanh-ca-tuan-ma-van-tuoi-bang-1-toi-giay 2.jpg">
+                    </div>
+                    <b id="divb">Bảo quả rau trong tủ lạnh cả tuần mà vẫn tươi như mới bằng 1 tờ giấy</b>
+                
+                    <p>
+                        Đối với các loại rau sống thì việc giữ cho chúng tươi lâu khó hơn các loại thực phẩm khác. Dù cho bạn có bỏ rau vào túi nilon và cất vào tủ lạnh thì vẫn có thể bị héo úa, dập nát và nhớt. Tuy nhiên nếu bạn thực hiện mẹo sau đây thì rau của bạn sẽ tươi như mới cả tuần.
+                    </p>
+                    <div class="img">
+                        <img id="minhhoa" src="images/meo-bao-quan-rau-trong-tu-lanh-ca-tuan-ma-van-tuoi-bang-1-toi-giay 3.jpg">
+                    </div>
+                        <ol class="teude1">
+                            <li id="tieude1">Đối với các loại rau sống thì việc giữ cho chúng tươi lâu khó hơn các loại thực phẩm khác. Dù cho bạn có bỏ rau vào túi nilon và cất vào tủ lạnh thì vẫn có thể bị héo úa, dập nát và nhớt. Tuy nhiên nếu bạn thực hiện mẹo sau đây thì rau của bạn sẽ tươi như mới cả tuần.</li>
+                            <li id="tieude1">Sau khi rau đã sạch bạn sử dụng khăn giấy hút bớt nước, bằng cách đặt rau vào giữa 2 tời khăn giấy rồi dùng tay ấn nhẹ nhàng để thấm bớt nước. Việc này nhằm ngăn tình trạng úng rau do lượng nước trên rau quá nhiều.</li>
+                            <li id="tieude1">Tiếp theo, bạn dùng 1 miếng khăn giấy khô khác gói phần rau đó lại. Miếng khăn giấy gói xung quanh rau có nhiệm vụ hấp thụ nước giúp rau giữ độ ẩm tốt hơn tránh tình trạng nhớt, khô héo.</li>
+                            <div class="img">
+                                <img id="minhhoa" src="images/meo-bao-quan-rau-trong-tu-lanh-ca-tuan-ma-van-tuoi-bang-1-toi-giay 4.jpg">
+                            </div>
+                            <li id="tieude1">Cuối cùng bạn cho gói rau vào túi ziplock kéo khóa kín lại rồi cho vào ngăn mát tủ lạnh. Nếu không có túi ziplock thì bạn có thể thay bằng túi ni lông, hợp nhựa nhưng nhớ đậy kín, càng ít không khí bên trong túi càng tốt.</li>
+                        </ol>
+                
+            
+                <p>
+                    Áp dụng mẹo vặt này, rau vẫn rất xanh tươi không héo hoặc bầm dập sau 5 ngày. Đến ngày thứ 7 thì rau bắt đầu bị héo hoặc có dấu hiệu úa nhưng vẫn còn ăn được. Sau 10 ngày thì rau sẽ không còn sử dụng được nữa.
+                </p>
+
+                   
+        
+                <div class="nearfooter">
+                <p id="nearfooter">😉Chúc các bạn thành công😉</p></div>
+                <a href="https://dienmaycholon.vn/kinh-nghiem-mua-sam/meo-bao-quan-rau-trong-tu-lanh-ca-tuan-ma-van-tuoi-bang-1-toi-giay" id="nguon"> Nguồn Tại đây</a>
+            </p>
+            </ol>
+            </div>
+            
+
+            <div class="sidebar">
+                
+                <div class="tin">
+                    <div class="decu"><c>Đề Cử</c></div>
+                    <div class="tt">
+                        
+                        <p class="dmnn"><c class="dcmua">Mua Nhiều</c></p><br><br>
+                        <a id="link" href="cachua.html">
+                            <img id="cachua" src="images/cachua.png">
+                            <a class="sp" href="cachua.html">Cà Chua</a></a>
+                       
+                            <a id="link" href="caibexanh.html">
+                            <img id="cachua" src="images/caibexanh.jpg">
+                            <a class="sp" href="caibexanh.html">Cải Bẹ Xanh</a></a>
+                        
+                            <a id="link" href="caibedun.html">
+                            <img id="cachua" src="images/caibedun.jpg" >
+                            <a class="sp" href="caibedun.html">Cải Bẹ</a></a>
+                        
+                            <a id="link" href="sacay.html">
+                            <img id="cachua" src="images/sacay.jpg">
+                            <a class="sp" class="sp" href="sacay.html">Sả Cây</a></a>
+                        
+                    </div>
+                    
+                </div>
+                
+            
+        </div>
+        
+        </main>
+        <footer>
+            <a id="cuahang">Cửa hàng rau sạch, chất lượng hàng đầu Việt Nam</a>
+        </footer>
+    </body>
+</html>

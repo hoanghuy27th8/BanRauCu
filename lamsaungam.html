@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKD</title>
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <style>
+        .container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .post{
+            width: 70%;
+            
+            float: left;
+            background-color: rgb(28, 72, 90);
+        }
+        .sidebar{
+            float: right;
+            width: 500px;
+            height: 300px;
+           
+            
+        }
+        header{
+                position: relative;
+                background-image: url("images/4936507_space-wallpaper-1-by-twalls.jpg");
+                height: 240px;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                font-size: 60px;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px #147228;
+               
+            }
+        #hender{
+            position: relative;
+            color: #9af152;
+            top: 0px;
+            animation: hender 2s;
+            animation-fill-mode: forwards;
+
+        }
+        
+        @keyframes hender{
+            form{top: 0%;}
+            to{top: 40%;}
+        }
+        
+
+        footer{
+                
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                height: 30px;
+                text-align: center;
+                border-radius:0 0 8px 8px;
+                
+        }
+        #cuahang{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                position: relative;
+                top: 5px;
+                color: #fff;  
+        }
+        
+        #nguon{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                
+            }
+            #nguon:hover{
+                color: yellow;
+                text-decoration: none;
+            }
+
+            #hinhanh{
+                position: absolute;
+                top: 10px;
+                width: 20%;
+                margin-left: auto;
+                right: 5px;
+                animation: hinhanh 2s;
+                animation-fill-mode: forwards
+            }
+            @keyframes hinhanh{
+                form{right:0%;}
+                to{right: 75%;}
+            }
+
+        
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 20px;
+                left:auto;
+                right: auto;
+                top: 20px;
+                color: white;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow:0 0 5px 5px #888;
+            }
+            main{
+                background-color: rgb(28, 72, 90);
+                width: 100%;
+               
+                border-radius:0 ;
+            }        
+            
+            
+        .content{
+            text-align:center;
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+         }
+         #tieude{
+            color: rgb(13, 228, 110);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+        }
+        .nearfooter{
+            text-align: center;
+        }
+        #tieude1{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        p {
+            
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 30px; 
+        }
+        .img{
+            text-align: center;
+        }
+
+        #divb{
+            color: rgb(4, 240, 110);
+        }
+
+
+        /*reposive*/
+        @media only screen and (max-width:600px) {
+            .container{
+                display: block;
+            }
+            .post{
+                width: 100%;
+                
+            }
+            .sidebar{
+                display: none;  
+            }
+           
+            
+        }
+
+
+        
+        a{
+            position: relative;
+            bottom: 50px;
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        .sp{
+           position: relative;
+           bottom: 300px;
+           color: #db5050;
+           font-weight: bold;
+           
+            
+        }
+        .sp:hover{
+            border: 2px solid rgb(240, 200, 200);
+            background-color: rgb(224, 215, 215);
+            border-radius: 8px;
+            color: rgb(14, 199, 44);
+        }
+        .tin{
+            position: relative;
+            left: 50px;
+            text-align: center;
+            
+            
+        }
+        .tt{
+            
+            background-color: rgb(15, 49, 63);
+            width: 360px;
+            border-radius: 5px;
+            
+        }
+        .dmnn{
+            position: relative;
+            top: 20px;
+            left: 5px;
+            width: 52%;
+            height: 70px;
+            text-align: center;
+            border-bottom: 40px solid #38b653;
+            border-right: 30px solid transparent; 
+        }
+        .decu{
+            position: relative;
+            top: 71px;
+            width: 359px;
+            height: 50px;
+            background-color: rgb(13, 228, 110);
+            border-radius: 5px 5px 0 0;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        c{
+            position: relative;
+            top: 10px;
+        }
+        .dcmua{
+            position: relative;
+            top: 80px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #cachua{
+            width: 350px;
+            height: 250px;
+            border-radius: 5px;
+            transition: transform 1s;
+        }
+        #cachua:hover{
+            transform: scale(0.9);
+        }
+        #minhhoa{
+            border-radius: 5px;
+            transition: transform 1s; 
+        }
+        #minhhoa:hover{
+            transform: scale(0.9);
+        }
+        nav{
+            background-color: #38b653;
+        }
+        #hinhanhsalad{
+            
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            
+        }
+        #vto{
+            font-size: 190px;
+            color: rgb(13, 228, 110);
+        }
+        b{
+            font-size: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div id="hender">Thủ Thuật Làm Sấu ngâm</div>
+        </header>
+        <nav>
+            <div class="content">
+                <div id="content">Cách làm sấu ngâm</div>
+            </div>
+        </nav>
+        <div id="conten">
+            <img id="hinhanh" src="images/logo1.png" >
+    
+        </div>
+       
+        <main>
+        <div class="container">
+            
+            <div class="post">
+                <ol class="tieude">
+                    <div>
+                    <img id="hinhanhsalad" align="left" src="images/sau.jpg" width="400px" height="250px" ></div>
+                    
+                    <p>
+                        <p>
+        
+                            <b id="vto">Q</b>uả là mình đã có một món quà đáng yêu trong ngày hè: mấy chùm sấu tươi của bác hàng xóm. Chuyện cũng từ tuần trước rồi. Nhưng lúc đấy mình còn đang chăm chút cho mẻ sấu ngâm thành công.
+                        
+                        </p>
+
+
+
+                        <p>
+                            Bố luôn bảo sấu ngâm khó. Mà đó là sự thật. Trong trí nhớ của mình, hồi bé vẫn cực thích nước sấu. Nhưng cứ làm ít thì được mà làm nhiều là sẽ lên men. Nhất là cái lần mình học cấp 1, nì nèo mẹ mua sấu về làm nhưng rồi hình như bỏ đi cả vì mốc meo toàn tập…
+                        </p>
+                        
+                        <p>
+                            Vậy nên chẳng có gì lạ khi đầu hè mình lại nì nèo mẹ mua sấu về ngâm bố lại có chút lưỡng lự và phản đối. À thì năm nay con đã tự tin với món sấu. Và còn nữa! Con muốn phục thù vụ đã bỏ lỡ mùa dâu và món mứt dâu đã kế hoạch hóa từ năm trước đấy chứ!
+                        </p>
+                        <p>
+                            Thế là tuần trước mẹ đã mua 1 cân sấu. Ít quá đến mức con cứ trề môi. Ai ngờ tối đến bác hàng xóm lại xách sang một chùm sấu rất tươi non.
+                        </p>
+                        <p>
+                            Quà tặng là lương thực thực phẩm. Có hay và sang không? 😡
+                        </p>
+                        <p>
+                            Dù sấu non không dùng ngâm sấu ngon, nhưng mình lại thêm niềm vui cho việc bếp núc.
+                        </p>
+                        <p>
+                            Việc bếp núc mà cả tháng trời mình đang bỏ bê rồi đổ tại đi làm mệt nên không còn cảm hứng. Cả viết lách nữa.
+                        </p>
+                        <p>
+                            Nhân một ngày mưa. Nhân dịp sấu đã chín… Mình thấy phấn khởi ghê gớm và nghĩ nên chia sẻ với các bạn.
+                        </p>
+                            <b id="divb">VÀI LƯU Ý CHO MÓN SẤU NGÂM:</b>
+                        
+                        <p>
+                            1. Sấu để ngâm phải dùng sấu xanh to, sấu già, sấu trưởng thành. Không dùng sấu non vì lúc ngâm sấu non sẽ nhũn, mà không dùng sấu chín bởi sấu chín thì mất đi vị chua thơm. Sấu chín lại hợp dầm ăn ngay cơ.
+                        </p>
+                        <p>
+                            2. Sấu trước khi ngâm cần được nạo/gọt vỏ, ngâm trong nước vôi trong là thích thú nhất. Nhưng ngâm trong nước muối pha loãng cũng đã được rồi. Sấu được khía các cạnh để ngâm nước ra bớt nhựa, mà đến lúc ngâm đường sẽ ngấm nghía hơn.
+                        </p>
+                        
+                        <p>
+                            
+                            3. Để sấu giòn nên đun một nồi nước phèn chua – chỉ cần dùng 1 cục phèn bé bằng ngón tay – nước sôi thì tắt bếp, đổ sấu đã gọt vỏ vào, đảo đều, nhanh tay rồi đổ ra xối nước lạnh, để ráo nước.
+                        </p>
+                    
+                    
+                    <p>
+                        4. Sấu vốn chua hơn mơ, dâu nên công thức 1 quả – 1 đường không còn hợp lý. Ngâm 1.5 cân sấu bạn cần dùng đến 2 cân đường.
+                    </p>
+                    
+                    <p>
+                        5. Đường để ngâm hoa quả nên dùng đường đỏ. Đường đỏ chỉ rẻ hơn đường trắng xuất khẩu một chút thôi nhưng thơm hơn rất nhiều.
+                    </p>
+                    
+                    <p>
+                        6. Khi ngâm cần chú ý đảo đường cho đều. Thời gian mới ngâm nên để hé lọ ngâm để hơi không bị bí. Mùa này các cửa hàng bán loại lọ thủy tinh mới để chuyên dùng ngâm hoa quả thông minh mà đơn giản đến bất ngờ…
+                    </p>
+                    <p>7. Có điểm đặc biệt nữa là sấu ngâm lại được cho thêm gừng để tăng hương vị cho món sấu ngâm. Chỉ cần 1 củ gừng tươi nhỏ, thái thành lát mỏng rồi cho vào ngâm cùng.</p>
+                    <p>8. À, có điều nấu ăn cũng phải đến độ. Sấu không giống dâu. Dâu ngâm 5 ngày cũng bắt đầu ăn uống được. Sấu thì để ngon, hết cái vị chát phải chờ sau nửa tháng rồi ăn…</p>
+                    <p>Sấu ngâm thành công là nước sấu chua ngọt, dùng pha nước thì chỉ cần đổ thêm nước lọc không cần cho thêm đường. Quả sấu ngâm ăn không bị chua, ngấm đường, thơm mùi sấu mùi gừng tươi nhưng vẫn giòn kể cả khi lọ sấu ngâm đã được 1 năm.</p>
+                    <p>À, phải đấy! Lúc anh về anh sẽ được thưởng thức món sấu này >:D<</p>
+                    
+
+
+
+
+                <div class="nearfooter">
+                <p id="nearfooter">😉Chúc các bạn thành công😉</p></div>
+                <a href="https://www.dienmayxanh.com/vao-bep/cach-ngam-sau-duong-ngon-khong-bi-noi-vang-01658" id="nguon"> Nguồn Tại đây</a>
+            </p>
+            </ol>
+            </div>
+            
+
+            <div class="sidebar">
+                
+                <div class="tin">
+                    <div class="decu"><c>Đề Cử</c></div>
+                    <div class="tt">
+                        
+                        <p class="dmnn"><c class="dcmua">Mua Nhiều</c></p><br><br>
+                        <a id="link" href="cachua.html">
+                            <img id="cachua" src="images/cachua.png">
+                            <a class="sp" href="cachua.html">Cà Chua</a></a>
+                       
+                            <a id="link" href="caibexanh.html">
+                            <img id="cachua" src="images/caibexanh.jpg">
+                            <a class="sp" href="caibexanh.html">Cải Bẹ Xanh</a></a>
+                        
+                            <a id="link" href="caibedun.html">
+                            <img id="cachua" src="images/caibedun.jpg" >
+                            <a class="sp" href="caibedun.html">Cải Bẹ</a></a>
+                        
+                            <a id="link" href="sacay.html">
+                            <img id="cachua" src="images/sacay.jpg">
+                            <a class="sp" class="sp" href="sacay.html">Sả Cây</a></a>
+                        
+                    </div>
+                    
+                </div>
+                
+            
+        </div>
+        
+        </main>
+        <footer>
+            <a id="cuahang">Cửa hàng rau sạch, chất lượng hàng đầu Việt Nam</a>
+        </footer>
+    </body>
+</html>

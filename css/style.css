@@ -1,0 +1,1124 @@
+* {
+    margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+body {
+    /* background-color: #f0f3f7; */
+    background-image: url(images/background_header.webp);
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    height: 240px;
+    width: 100%;
+}
+
+main {
+    height: auto;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    box-shadow: 10px 10px 8px #888888;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*Thiết Lập Cho Thành Phần Nội Dung Giới Thiệu*/
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    line-height: 1.5rem;
+}
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.social-icon li a:hover{
+    background: #f00;
+}
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+
+.links h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+    position: relative;
+    width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 17px;
+}
+.links ul li a:hover{
+    color: #f59421;
+}
+.contact h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #ff5722;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li a{
+    text-decoration: none;
+}
+@media  (max-width: 768px){
+    footer{
+        padding: 40px;
+                }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+    }
+}
+
+
+/************************* HEADER **************************/
+
+/************************* Phần top header *************************/
+#top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 30px;
+    background: #f0f3f7;
+}
+#top, .header-r a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #888;
+    letter-spacing: .05rem;
+}
+
+#top #top-span {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: inline-block;
+    color: orangered;
+    font-size: 1.3rem;
+}
+
+.header-r a{
+    text-decoration: none;
+}
+
+.header-r a:hover {
+    color: #f59421;
+}
+
+@media screen and (max-width: 768px){
+    #top {
+        display: none;
+    }
+}
+
+/************************* Kết thúc - Phần top header *************************/
+
+
+/************************* Phần nội dung header *************************/
+#header_wapber{
+    display: flex;
+    margin-top: 10px;
+}
+#header_wapber .logo img{
+    height: 120px;
+    margin-left: 100px;
+    margin-right: 0;
+}
+#header_wapber .logo{
+    margin-top: 20px;
+}
+.name__shop{
+    font-size: 30px;
+    color: #8bcc66;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    margin-left: 0;
+}
+.slogan{
+    font-size: 20px;
+    font-family: cursive;
+    width: 385px;
+    margin-left: 20px;
+}
+.icon1{
+    margin: 40px 80px 0 80px;
+}
+.icon1 img{
+    height: 80px;
+    float: left;
+}
+.icon2 img{
+    height: 80px;
+    margin-top: 30px;
+}
+.icon2 .info__icon {
+    margin-top: -51px;
+    margin-left: 90px;
+}
+.info__icon {
+    width: 200px;
+    margin: 30px 0px 0px 90px;
+}
+
+/************************* Kết thúc - Phần nội dung header *************************/
+
+/************************* END HEADER *************************/
+
+/************************* MAIN-BODY **************************/
+.main-body {
+    position: relative;
+    z-index: 1;
+}
+
+.page-shop .box-head {
+    background-image: url(images/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #130f40;
+    height: 60vh;
+}
+
+.box {
+    position: relative;
+}
+
+.box-head {
+    position: relative;
+}
+
+.page-shop .box-head .box-body {
+    width: 100%;
+    max-width: 900px;
+}
+
+.box-body {
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+.title {
+    width: 100%;
+    font-style: normal;
+    font-size: 60px;
+    text-align: left;
+    font-family: "Pacifico", cursive;
+    margin: 10px 0;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.content {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    text-align: justify;
+    margin-top: 24px;
+    font-size: 20px;
+} 
+/************************* END MAIN-BODY *************************/
+
+/************************* BỘ LỌC *************************/
+.boloc_heading{
+    color: #0F9D58;
+    font-size: 1.5rem;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+}
+.list_boloc{
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+.item_boloc a:hover{
+    color: #fff;
+    background-color: #0F9D58;
+}
+.item_boloc a{
+    cursor: pointer;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px ;
+    font-weight: 400;
+}
+.item_boloc_link {
+    padding: 12px 16px;
+    margin: 5px 28px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(29, 27, 27, 0.897);
+}
+.active{
+    background-color:#0F9D58;
+    color:#fff;
+}
+.list_trang {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+.list_trang li{
+    float: left;
+    cursor: pointer;
+    margin-left: -30px;
+}
+#chuyentrang_cuqua,#chuyentrang_giamgia,#chuyentrang_rauxanh,#sp2_rauxanh,#sp2_giamgia
+,#sp2_cuqua{
+    display: none;
+}
+.item_trang a:hover{
+    color: #fff;
+    background-color: #0F9D58;
+}
+.item_trang a{
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px ;
+    font-weight: 400;
+}
+.phan_chuyen{
+    padding: 12px 16px;
+    margin: 5px 28px;
+   
+    display: block;
+    margin-top: 5px;
+    font-size: 20px;
+    text-decoration: none;
+   
+}
+
+@media screen and (max-width: 768px) {
+    #main-sanpham {
+        float: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: lightblue;
+    }
+
+    .boloc_heading {
+        float: none;
+        flex-direction: column-reverse;
+        width: 100%;
+        background-color: khaki;
+    }
+
+    .list_boloc {
+        float: none;
+        flex-direction: row-reverse;
+        background-color: lawngreen;
+        width: 100%;
+    }
+}
+
+/************************* END BỘ LỌC *************************/
+
+/************************* SẢN PHẨM *************************/
+.slide {
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 17%;
+    height: auto;
+    margin-left: 1%;
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+
+article{
+    height: auto;
+    width: auto;
+    margin-left: 20%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+} 
+
+.mytabs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    /*flex-item tự xuống hàng*/
+    padding: 25px;
+    font-size: 1rem;
+}
+
+.mytabs label {
+    background: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: auto;
+    width: auto;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    margin-right: 20px;
+}
+
+
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #e2e2e2;
+    color: #0606d1;
+}
+.headline{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.headline h3{
+    font-size: 28px;
+    color: black;
+    padding: 10px 250px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #0F9D58;
+    background: #fff;
+    font-size: 500; 
+    border-radius: 10px;
+    letter-spacing: .2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
+}
+ul.products{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li{
+    border: 1px solid #ccc;
+    flex-basis: 24%;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;       
+}
+ul.products li img{
+    max-width: 100%;
+    height: 250px;
+}
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+ul.products li .product-top .product-thumb{
+    display: block;
+} 
+ul.products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+ul.products li .product-top .product-thumb img{
+    display: block;
+}
+ul.products li .product-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: chocolate;
+    color: #fff;
+    padding: 8px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+ul.products li:hover a.buy-now{
+    bottom: 0px;
+}
+ul.products li .product-info{
+    padding: 10px 0px;
+}
+ul.products li .product-info a{
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-info a.product-cat{
+    font-size: 17px;
+    text-transform: lowercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+}
+ul.products li .product-info a.product-name{
+    color: black;
+    padding: 3px 0px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+ul.products li .product-info a.product-name:hover{
+    color: #f59421;
+}
+ul.products li .product-info .product-price{
+    padding: 5px 0px;
+    font-weight: 600;
+    color: #cc0005;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 768px)  {
+    .products {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/************************* END SẢN PHẨM *************************/
+
+/************************* TIN TỨC *************************/
+
+.tintuc{
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+
+/************************* END TIN TỨC *************************/
+
+/************************* MẸO HAY *************************/
+
+.meohay {
+    text-align: center;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+.meohay-noidung {
+    margin-left: 8%;
+    margin-right: 8%;
+    border: 1px solid #ccc 100%;
+}
+
+#salad{
+    width: 400px;
+    float: left;
+    padding: 10px;
+    height: 250px;
+    border-radius: 40px;
+    transition: transform 1s;
+}
+#sau{
+    padding: 30px;
+    width: 400px;
+    height: 250px;
+    border-radius: 50px;
+    
+    transition: transform 1s;
+    
+}
+#salad:hover{
+    transform: scale(1.2);
+}
+#sau:hover{
+    transform: scale(1.2);
+}
+#mitom:hover{
+    transform: scale(1.2);
+}
+#mitom{
+    padding: 30px;
+    width: 400px;
+    float: right;
+    height: 250px;
+    border-radius: 50px;
+    transition: transform 1s;
+}
+#text{
+    text-align: center;
+}
+#text1{
+    font-size: 26px;
+    position: relative;
+    right: 230px;
+    text-decoration: none;
+    color: #130f40;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+#text{
+    text-align: center;
+}
+#text2{
+    position: relative;
+    left: 50px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #130f40;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+#text3{
+    position: relative;
+    left: 290px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #130f40;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+#text1:hover{
+    color: red;
+}
+#text2:hover{
+    color: red;
+}
+#text3:hover{
+    color: red;
+}
+#tc{
+    position: absolute;
+}
+#sp{
+    position: absolute;
+    left: 160px;
+}
+#tt{
+    position: absolute;
+    left: 300px;
+}
+#mh{
+    position: absolute;
+    left: 420px;
+}
+#lh{
+    position: absolute;
+    left: 560px;
+}
+/************************* MẸO HAY *************************/
+
+/************************* ĐƯỜNG LINK *************************/
+.duonglink {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    width: 100%;
+    background: #e2e2e2;
+    color: #130f40;
+    margin-bottom: 10px;
+}
+
+.duonglink ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.duonglink li{
+    float: left;
+    font-size: 20px;
+    margin-left: 20px; 
+}
+
+.duonglink a{
+    float: left;
+    text-decoration: none;
+    color: #130f40;
+}
+
+.duonglink a:hover{
+    color: #00a8ff;
+}
+
+/************************* END ĐƯỜNG LINK ************************/
+
+/************************* LIÊN HỆ *************************/
+
+.form {
+    text-align: center;
+    margin-top: 40px;
+    max-width:420px;
+    margin:50px auto;
+}
+#form1 input[type=text] {
+    color:rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #8bcc66;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+    
+ #form1 #fcontent {
+    height: 100px;
+}
+#form1 input[type=submit] {
+    color:rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: #CC6666;
+    border:2px solid #CC6666;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+#form1 input[type="submit"]:hover {
+    background:#CC4949;
+}
+
+@media screen and (max-width: 768px) {
+    .container p{
+        width: 700px;
+    }
+    .container ul li a {
+        font-size: 20px;
+        float: left;
+        margin: 2px 20px;
+    }
+}
+
+/************************* END LIÊN HỆ *************************/
+
+/************************* CHI TIẾT SẢN PHẨM *************************/
+.chitiet {
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: 20px 2% 20px 2%;
+}
+.chitiet-sp{
+    float: left;
+    height: auto;
+    width: 65%;
+}
+.chitiet-bg {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#chitiet-img {
+    float: left;
+    border: 1px solid #eee;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease-in-out;
+    background-color: 0.15s ease-in-out;
+    border-color: 0.15s ease-in-out;
+    box-shadow: 0.15s ease-in-out;
+}
+
+#chitiet-img img{
+    max-width: 100%;
+    min-height: 100%;
+    padding: 10px;
+}
+#chitiet-mota {
+    width: 60%;
+    background-color: #fff;
+    padding: 10px;
+}
+.title-product {
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.row {
+    display: flex;
+}
+.group-status {
+    font-size: 17px;
+}
+.status_name {
+    color: #38b653;
+}
+.price-box {
+    position: relative;
+    margin: 15px 0 10px;
+    padding: 10px 16px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    display: inline-block;
+}
+.product-price {
+    font-size: 28px;
+    color: #f59421;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: inherit;
+}
+.swatch, .product-summary {
+    font-size: 17px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0 12px 0;
+}
+
+.swatch, .product-summary h4{
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.product-summary p{
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+.swatch {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.position-relative {
+    position: relative!important;
+}
+
+.swatch-element {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.swatch-element input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.soluong {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.button_actions .btn_base {
+    height: 48px;
+    line-height: 45px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0px 35px;
+    border-radius: 5px;
+    margin-top: 0px;
+    border: solid 1px transparent;
+    background: #ff5722;
+    font-weight: 600;
+    min-width: 300px;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease-in-out;
+    background-color: 0.15s ease-in-out;
+    border-color: 0.15s ease-in-out;
+    box-shadow: 0.15s ease-in-out;
+}
+
+#qtym{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    width: 40px;
+    text-align: center;
+}
+
+/* CHI TIẾT SẢN PHẨM BỔ SUNG */
+
+.chitiet-bs {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    width: 30%;
+    height: auto;
+    margin-left: 20px;
+}
+.sp-phobien{
+    height: auto;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    background: #fff;
+}
+.tieude-bs {
+    font-weight: 300px;
+    font-size: 20px;
+    height: 0;
+    width: 300px;
+    border-bottom: 40px solid #38b653;
+    border-right: 20px solid transparent;
+}
+.tieude-bs h4{
+    color: #fff;
+    padding: 8px;
+}
+.hang-sp{
+    display: flex;
+    margin: 5px;
+    padding: 20px 5px;
+    text-align: center;
+    justify-content: space-around;
+}
+.hang-sp a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 300;
+    color: black;
+}
+.hang-sp a:hover{
+    color: #ff5722;
+}
+
+#img-bs {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.meohay-gd{
+    background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .chitiet, .chitiet-bg {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .chitiet-sp{
+        width: 100%;
+    }
+    #chitiet-img img {
+        width: 100%;
+    }
+    #chitiet-mota {
+        width: 100%;
+    }
+    .mota-title h2{
+        width: 100%;
+    }
+    .chitiet-bs {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .hang-sp a{
+        font-size: 20px;
+    }
+    #img-bs {
+        width: 200px;
+        height: 200px;
+    }
+}
+/* END CHI TIẾT SẢN PHẨM */
+
+/* MÔ TẢ */
+.mota {
+    margin-top: 30px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+.mota h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.mota hr, .chitiet-bs hr {
+    width: 100%;
+    height: 3px;
+    background: #38b653;
+}
+
+.noidung-mota {
+    padding: 20px 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mota p{
+    text-align: justify;
+    font-size: 18px;
+    word-spacing: 2px;
+    margin: 10px 0;
+    line-height: 1.6rem;
+}
+
+.mota h3{
+    text-align: justify;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.mota ul, ol{
+    margin: 0 60px;
+    padding-top: 5px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6rem;
+}
+
+#img_sp {
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+#color-txt {
+    font-weight: 500;
+    color: #288ad6;
+}
+
+/************************* END MÔ TẢ *************************/

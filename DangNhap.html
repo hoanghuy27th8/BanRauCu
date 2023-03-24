@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="#">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng Nhập</title>
+        
+        <script>
+            /*function validateform(){
+                var a = document.getElementsByTagName('input');
+                var email = a[0].value;
+                var psw = a[1].value;
+                if(email == "" || email == null){
+                    alert("Bạn chưa nhập tài khoản");
+                    return;
+                /*}else if(email.length <= 8){
+                    alert("Tài khoản ít nhất 8 ký tự");
+                    return;
+                }else if(psw == ""){
+                    alert("Bạn chưa nhập mật khẩu");
+                    return;
+                }/*else if(psw.length < 6){
+                    alert("Mật khẩu tối thiểu 6 ký tự, ít nhất một chữ cái và một số");
+                    return;
+                }
+                else if(psw != "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" ){
+                    alert("Mật khẩu tối thiểu 6 ký tự, ít nhất một chữ cái và một số");
+                    return;
+                }
+                
+            }*/
+            var USERNAME = 'admin';
+            var PASSWORD = '111111';
+            function getValue(id){
+                return document.getElementById(id).value.trim();
+            }
+            function showError(key,mess){
+                document.getElementById(key +'_error').innerHTML = mess;
+            }
+            function validator(){
+            
+                
+                
+                var a = true;
+            //username
+                var username = getValue('username');
+                if (username == '' || username.length < 5 || !/^[a-zA-Z0-9]+$/.test(username)){
+                    a = false;
+                    showError('username', 'Tài khoản có ít nhất 5 ký tự (Không chứa ký tự đặc biệt)');
+                }
+            //password
+                var password = getValue('password');
+                if (password == '' || password.length < 6 ){
+                    a = false;
+                    showError('password', 'Mật khẩu có ít nhất 6 ký tự');
+                }
+                return a;
+         
+            }    
+            function Kiemtra(){
+                var user = document.getElementById("username").value;
+                var pass = document.getElementById('password').value;
+                if(user != USERNAME || pass != PASSWORD){
+                    alert("Tài khoản hoặc mật khẩu không chính xác");
+                    return false;
+                }
+                return true;
+            }
+           
+        </script>
+        <style type="text/css">
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 13px;
+                left:auto;
+                right: auto;
+                top: 20px;
+                color: rgb(38, 0, 255);
+                border-radius: 10px 10px 10px 10px;
+                box-shadow:0 0 5px 5px #888;
+                
+            } 
+            header{
+                position: relative;
+                height: 240px;
+                background-image: url("images/63ae92f618a007f472f6fd3b74e75190.jpg");
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+            }
+            @keyframes filling {
+                from{
+                    background-position: center 25%;
+                }
+                to {
+                    background-position: center 50%;
+                }
+            }
+
+            .container-text {
+                /*background-image:  url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);*/
+                background-image: url("images/fresh-fruits-2305192.jpg");
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                color:  #FFFFFF;
+                padding-top: 50px;
+                font-weight: bold;
+                font-size: 60px;
+                font-family: 'Noto Sans JP', sans-serif;
+                animation: filling 4s ease forwards;
+            }
+            nav{
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                text-align: right;
+            }
+            #qvdk{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                
+            }
+            #qvdk:hover{
+                color: red;
+                text-decoration: none;
+            }
+            main{
+                position: relative;
+                background-image: url("images/hinh-nen-1920x1080-1-1.jpg");
+                width: 100%;
+                height: 460px;
+                border-radius:0 ;
+            }
+            footer{
+                position: relative;
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                height: 30px;
+                text-align: center;
+                border-radius:0 0 8px 8px;
+                
+            }
+            #cuahang{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                position: relative;
+                top: 5px;
+                color: #fff;  
+            }
+        
+           #img1{
+               position: absolute;
+               top: 10px;
+               left: 10px;
+               animation: img1 2s;
+               animation-fill-mode: forwards
+
+           }
+            @keyframes img1{
+                form{left: 0%;}
+                to{left: 5%;}
+            }
+            label{
+                color: rgb(0, 250, 229);
+                font-size: 20px;
+            }
+            input[type=text], input[type=password] {
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                width:60%;
+                border-radius:20px;
+              
+            }
+            
+
+            button:hover {
+                opacity:1;
+            }
+            .cancelbtn {
+                padding: 14px 20px;
+                background-color: #f44336;
+            }
+            .signinbtn {
+                top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                left: 30px;
+                background-color:#00FF33;;
+                width: 20%;
+                height: 30px;
+                border-radius:15px;
+                border:0;
+                
+            }
+           
+            .contaner{
+                width: 900px;
+                height: 250%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            #conten{
+                float: left;
+                width: 35%;
+                height: 300px;
+            }
+            #form{
+                margin-left: auto;
+                margin-right: auto;
+                width: 35%;
+                position: relative;
+                left: 200px;
+                height: 200px;
+                
+            }
+            
+            #hinhanh{
+                position: relative;
+                top: 0px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                animation: hinhanh 2s;
+                animation-fill-mode: forwards
+            }
+            @keyframes hinhanh{
+                from{top: 0%;}
+                to{top: 5%;}
+            }
+            #QMK{
+                position: absolute;
+                left: 65%;
+                top: 282px ;
+                color: yellow;
+                text-decoration: none; 
+            }
+            #QMK:hover{
+                color: white;
+                text-decoration: none;
+            }
+            #gndn{
+                position: absolute;
+                top: 282px;
+                left: 720px;
+            }
+            #gndn1{
+                position: absolute;
+                color: red;
+                font-size: 20px;
+                top: 280px;
+                left: 750px;
+            }
+            #gndn1:hover{
+                color: rgb(166, 255, 0);
+            }
+            span{
+                position: relative;
+                left: 30px;
+                bottom: 15px;
+                color: red;
+                font-size: 15px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container-text">ĐĂNG NHẬP</div>
+            <img src="" height="130px" id="img1">
+        </header>
+        <nav>
+            <div><a id="qvdk" href="Dangky.html">Đăng ký</a></div>
+        </nav>
+        <main>
+            <div id="conten">
+                <img id="hinhanh" src="images/logo1.png">
+            </div>
+            <form method="post" id="form1" action="trangchuadmin.html" onclick="return validator();" >
+                <div id="form" class="form-groups">
+                    <br><br>
+                    <div class="input-row">
+                        <label id="lable" for="email"><b>Tài Khoản</b></label><br>
+                        <input type="text" placeholder="Nhập Tài Khoản" class="username" oninput="check()"
+                             name="username" id="username" required maxlength="20"><br>
+
+                        <span id="username_error"></span>
+                    </div>
+                    <div class="input-row">
+                <br>    <label id="lable" for="password" ><b>Mật Khẩu</b></label>    <br>
+                        <input type="password" placeholder="Nhập Mật Khẩu" 
+                            name="password" id="password" class="password" required maxlength="20"><br>
+                        <span id="password_error"></span><br><br><br><br><br>
+                        
+                    <div class="input-row">
+                        <button type="submit" class="signinbtn" id="signinbtn" onclick=" return Kiemtra()"  >Sign In</button>
+                    </div>    
+                    </div>
+            <br>    
+                    
+                </div>
+            </form>
+                    <input id="gndn" type="checkbox" name="remember" style="margin-bottom:15px">
+                    <div id="gndn1">Ghi nhớ đăng nhập</div>
+
+                    <label><a href="Quenmatkhau.html" id="QMK">Quên Mật Khẩu ?</a></label><br>
+        </main>
+       <footer>
+            <a id="cuahang">Cửa hàng rau sạch, chất lượng hàng đầu Việt Nam</a>
+       </footer>
+    </body>
+</html>

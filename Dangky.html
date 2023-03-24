@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="#">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng Ky</title>
+        <script>
+            /*function send(){
+                var a = document.getElementsByTagName('input');
+                var arr = document.getElementsByTagName('input');
+                var User = arr[0].value;
+                var psw = arr[1].value;
+                var psw1 = arr[2].value;
+                var email = arr[3].value;
+                if(User == "" ){
+                    alert("Bạn chưa nhập Tài Khoản");
+                    return;
+                }
+                
+                if(psw == ""){
+                    alert("Bạn Chưa nhập Mật Khẩu");
+                    return;
+                }
+                
+                if(psw1 == ""){
+                    alert("Bạn Chưa nhập lại Mật Khẩu");
+                    return;
+                }
+                if(psw != psw1){
+                    alert("Mật Khẩu nhập lại không đúng. Vui lòng nhập lại");
+                    return;
+                }
+                if(email ==""){
+                    alert("Bạn Chưa nhập địa chỉ email");
+                    return;
+                }
+                var email = document.getElementById('email');
+                var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                if (!filter.test(email.value)) {
+                    alert('Hay nhap dia chi email hop le.\nExample@gmail.com');
+                    email.focus;
+                    return false;
+                }
+               
+            }*/
+            function resetform(){
+                    document.getElementById("newForm").reset();
+            }    
+
+            function getValue(id){
+                return document.getElementById(id).value.trim();
+            }
+            function showError(key,mess){
+                document.getElementById(key +'_error').innerHTML = mess;
+            }
+            function validator(){
+                var a = true;
+            //username
+                var username = getValue('username');
+                if (username == '' || username.length < 5 || !/^[a-zA-Z0-9]+$/.test(username)){
+                    a = false;
+                    showError('username', 'Tài khoản có ít nhất 5 ký tự (Không chứa ký tự đặc biệt)');
+                }
+            //password
+                var password = getValue('password');
+                
+                if (password == '' || password.length < 6 ){
+                    a = false;
+                    showError('password', 'Mật khẩu có ít nhất 6 ký tự');
+                }
+            //repassword
+                var repassword = getValue('repassword');
+                if (repassword != password){
+                    a = false;
+                    showError('repassword', 'Mật khẩu nhập lại không trùng khớp');
+                }
+            //Email
+                var email = getValue('email');
+                //var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                if (email == '' ||!/^([a-zA-Z0-9_\.\-])+\@(gmail+\.)+(com)+$/.test(email)){
+                    a = false;
+                    showError('email', 'Email không đúng hoặc không đúng định dạng(VD:Example@gmail.com)');
+                }    
+                return a;
+         
+            }  
+
+        </script>
+        <style type="text/css">
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 13px;
+                left:auto;
+                right: auto;
+                top: 20px;
+                color: rgb(0, 255, 234);
+                border-radius: 10px 10px 10px 10px;
+                box-shadow:0 0 5px 5px #888;
+            } 
+            header{
+                position: relative;
+                height: 240px;
+                background-image: url("images/63ae92f618a007f472f6fd3b74e75190.jpg");
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+            }
+            nav{
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                text-align: right;
+            }
+            main{
+                position: relative;
+                background-image: url("images/hinh-nen-1920x1080-1-1.jpg");
+                background-color: rgb(28, 72, 90);
+                width: 100%;
+                height: 520px;
+                border-radius:0 ;
+            }
+            footer{
+                position: relative;
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                height: 30px;
+                text-align: center;
+                border-radius:0 0 8px 8px;
+                
+            }
+            #qvdn{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                
+            }
+            #qvdn:hover{
+                color: red;
+                text-decoration: none;
+            }
+            
+            @keyframes filling {
+                from{
+                    background-position: center 25%;
+                }
+                to {
+                    background-position: center 50%;
+                }
+            }
+
+            .container-text {
+                /*background-image:  url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);*/
+                background-image: url("images/fresh-fruits-2305192.jpg");
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                color:  #FFFFFF;
+                padding-top: 50px;
+                font-weight: bold;
+                font-size: 60px;
+                font-family: 'Noto Sans JP', sans-serif;
+                animation: filling 4s ease forwards;
+            }
+            
+            #cuahang{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                position: relative;
+                top: 5px;
+                color: #fff;  
+            }
+        
+            #img1{
+               position: absolute;
+               top: 10px;
+               left: 10px;
+               animation: img1 2s;
+               animation-fill-mode: forwards
+
+            }
+            @keyframes img1{
+                form{left: 0%;}
+                to{left: 5%;}
+            }
+            label{
+                color: rgb(0, 250, 229);
+                font-size: 20px;
+            }
+            #email{
+                position: relative;
+                left: 40px;
+            }
+            .email{
+                position: relative;
+                left: 40px;
+            }
+            input[type=text], input[type=password] {
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                width:60%;
+                resize: vertical;
+                padding:15px;
+                border-radius:15px;
+                border:0;
+                box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+            }
+            button:hover {
+                opacity:1;
+            }
+            .cancelbtn {
+                padding: 14px 20px;
+                background-color: #f44336;
+            }
+            .signinbtn {
+                top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                left: 50px;
+                background-color:#00FF33;;
+                width: 20%;
+                height: 30px;
+                border-radius:15px;
+                border:0;
+                box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+            }
+            .resetbtn {
+                top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                left: 50px;
+                background-color:#00FF33;;
+                width: 20%;
+                height: 30px;
+                border-radius:15px;
+                border:0;
+                box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            .contaner{
+                width: 900px;
+                height: 250%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            
+            #conten{
+                float: left;
+                width: 35%;
+                height: 300px;
+            }
+            #form{
+                margin-left: auto;
+                margin-right: auto;
+                width: 35%;
+                position: relative;
+                left: 200px;
+                height: 300px;
+            }
+            #hinhanh{
+                position: relative;
+                top: 0px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                animation: hinhanh 2s;
+                animation-fill-mode: forwards
+            }
+            @keyframes hinhanh{
+                form{top: 0%;}
+                to{top: 30%;}
+            }
+            span{
+                position: relative;
+                left: 30px;
+                bottom: 15px;
+                color: red;
+                font-size: 15px;
+            }
+      
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container-text">ĐĂNG KÝ TÀI KHOẢN</div>
+            
+        </header>
+        <nav>
+            <div><a href="DangNhap.html" id="qvdn">Quay Về Đăng Nhập</a></div>
+        </nav>
+        <main>
+            <div id="conten">
+                <img id="hinhanh" src="images/logo1.png" >
+        
+            </div>
+            <div id="form">
+            <form id="newForm" >
+                <form method="post" action="#" id="form1"  ><br>
+                    <div class="input-row">
+                        <label id="lable" for="username"><b>Tài Khoản</b></label><br>
+                        <input type="text" placeholder="Nhập Tài Khoản" class="username"
+                             name="username" id="username" required maxlength="20"><br>
+                        <span id="username_error"></span>
+                    </div>
+                
+                <div class="input-row">
+                    <br>    <label id="lable" for="password" ><b>Mật Khẩu</b></label><br>
+                            <input type="password" placeholder="Nhập Mật Khẩu" 
+                                name="password" id="password" class="password" required maxlength="20"><br>
+                            <span id="password_error"></span>
+                </div>
+
+                <div class="input-row">
+                    <label id="nlmk" for="repassword">Nhập Lại Mật Khẩu</label>
+                    <input type="password" placeholder="Nhập Lại Mật Khẩu" id="repassword" class="repassword"
+                        name="repassword" required maxlength="20"><br>
+                        <span id="repassword_error"></span>
+                </div>
+
+                <div class="input-row">
+                    <label id="lable" for="email" class="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Nhập Email VD:Example@gmail.com " name="email" id="email" class="email"
+                        required maxlength="30"><br>
+                        <span id="email_error"></span>
+                </div>
+                <button type="submit" class="signinbtn" onclick="return validator()">Sign Up</button>
+                <button type="button" class="resetbtn" onclick="resetform()">Rest Form</button>
+                
+            </div>
+            </form>
+         </form>
+        </main>
+       <footer>
+            <a id="cuahang">Cửa hàng rau sạch, chất lượng hàng đầu Việt Nam</a>
+       </footer>
+    </body>
+</html>

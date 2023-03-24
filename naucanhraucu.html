@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mẹo hay | Nấu canh rau củ</title>
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <style>
+        .container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .post{
+            width: 70%;
+            
+            float: left;
+            background-color: rgb(28, 72, 90);
+        }
+        .sidebar{
+            float: right;
+            width: 500px;
+            height: 300px;
+           
+            
+        }
+        header{
+                position: relative;
+                background-image: url("images/4936507_space-wallpaper-1-by-twalls.jpg");
+                height: 240px;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                font-size: 60px;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px #147228;
+               
+            }
+        #hender{
+            position: relative;
+            color: #9af152;
+            top: 0px;
+            animation: hender 2s;
+            animation-fill-mode: forwards;
+
+        }
+        
+        @keyframes hender{
+            form{top: 0%;}
+            to{top: 40%;}
+        }
+        
+
+        footer{
+                
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                height: 30px;
+                text-align: center;
+                border-radius:0 0 8px 8px;
+                
+        }
+        #cuahang{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                position: relative;
+                top: 5px;
+                color: #fff;  
+        }
+        
+        #nguon{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                
+            }
+            #nguon:hover{
+                color: yellow;
+                text-decoration: none;
+            }
+
+            #hinhanh{
+                position: absolute;
+                top: 10px;
+                width: 20%;
+                margin-left: auto;
+                right: 5px;
+                animation: hinhanh 2s;
+                animation-fill-mode: forwards
+            }
+            @keyframes hinhanh{
+                form{right:0%;}
+                to{right: 75%;}
+            }
+
+        
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 20px;
+                left:auto;
+                right: auto;
+                top: 20px;
+                color: white;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow:0 0 5px 5px #888;
+            }
+            main{
+                background-color: rgb(28, 72, 90);
+                width: 100%;
+               
+                border-radius:0 ;
+            }        
+            
+            
+        .content{
+            text-align:center;
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+         }
+         #tieude{
+            color: rgb(13, 228, 110);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+        }
+        .nearfooter{
+            text-align: center;
+        }
+        #tieude1{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        p {
+            
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 30px; 
+        }
+        .img{
+            text-align: center;
+        }
+
+        #divb{
+            color: rgb(4, 240, 110);
+        }
+
+
+        /*reposive*/
+        @media only screen and (max-width:600px) {
+            .container{
+                display: block;
+            }
+            .post{
+                width: 100%;
+                
+            }
+            .sidebar{
+                display: none;  
+            }
+           
+            
+        }
+
+
+        
+        a{
+            position: relative;
+            bottom: 50px;
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        .sp{
+           position: relative;
+           bottom: 300px;
+           color: #db5050;
+           font-weight: bold;
+           
+            
+        }
+        .sp:hover{
+            border: 2px solid rgb(240, 200, 200);
+            background-color: rgb(224, 215, 215);
+            border-radius: 8px;
+            color: rgb(14, 199, 44);
+        }
+        
+        .tin{
+            position: relative;
+            left: 50px;
+            text-align: center;
+            
+            
+        }
+        .tt{
+            
+            background-color: rgb(15, 49, 63);
+            width: 360px;
+            border-radius: 5px;
+            
+        }
+        .dmnn{
+            position: relative;
+            top: 20px;
+            left: 5px;
+            width: 52%;
+            height: 70px;
+            text-align: center;
+            border-bottom: 40px solid #38b653;
+            border-right: 30px solid transparent; 
+        }
+        .decu{
+            position: relative;
+            top: 71px;
+            width: 359px;
+            height: 50px;
+            background-color: rgb(13, 228, 110);
+            border-radius: 5px 5px 0 0;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        c{
+            position: relative;
+            top: 10px;
+        }
+        .dcmua{
+            position: relative;
+            top: 80px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #cachua{
+            width: 350px;
+            height: 250px;
+            border-radius: 5px;
+            transition: transform 1s;
+        }
+        #cachua:hover{
+            transform: scale(0.9);
+        }
+        #minhhoa{
+            border-radius: 5px;
+            transition: transform 1s; 
+        }
+        #minhhoa:hover{
+            transform: scale(0.9);
+        }
+        nav{
+            background-color: #38b653;
+        }
+        #hinhanhsalad{
+            
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            
+        }
+        #vto{
+            font-size: 190px;
+            color: rgb(13, 228, 110);
+        }
+        b{
+            font-size: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div id="hender">Hướng dẫn nấu canh rau củ</div>
+        </header>
+        <nav>
+            <div class="content">
+                <div id="content">Hướng dẫn cách nấu canh rau củ quả thập cẩm ngon bổ dưỡng</div>
+            </div>
+        </nav>
+        <div id="conten">
+            <img id="hinhanh" src="images/logo.png" >
+    
+        </div>
+       
+        <main>
+        <div class="container">
+            
+            <div class="post">
+                <ol class="tieude">
+                    <div>
+                    <img id="hinhanhsalad" align="left" src="images/cach-nau-canh-rau-cu-qua-thap-cam-1.jpg" width="400px" height="250px" ></div>
+                    
+                    <p>
+                        <b id="vto">C</b>anh rau củ quả thập cẩm được nhiều người lựa chọn vì nó vừa bổ dưỡng lại dễ ăn. Cách nấu canh rau củ quả thập cẩm không quá cầu kỳ nên không tốn thời gian.
+        
+                        Vào những ngày hè oi nóng, canh là món ăn không thể thiếu trong bữa cơm của mỗi gia đình. Canh rau củ quả thập cẩm được mọi người ưa chuộng vì nó vừa bổ dưỡng lại dễ ăn. Món canh này được chế biến rất đơn giản, không cầu kỳ nên thời gian chế biến nhanh. Cùng Mucwomen vào bếp để thực hiện món canh rau củ quả thập cẩm thơm ngon, thanh mát cho bữa cơm gia đình nhé.
+                   
+                    
+                        <ol class="tieude">
+
+                            <li id="tieude">Món canh rau củ quả thập cẩm dinh dưỡng với sườn
+                                Nguyên liệu cần chuẩn bị nấu canh</li>
+                                <ol type="a"  class="typea" >
+                                    <li>150gr thịt sườn thăn</li>
+                                    <li>70gr giò sống</li>
+                                    <li> 6 đến 8 tai nấm hương</li>
+                                    <li>50gr đậu Hà Lan</li>
+                                    <li>50gr bắp bao tử</li>
+                                    <li>Cà rốt: 1/2 củ</li>
+                                    <li>Nửa cây súp lơ trắng hoặc xanh</li>
+                                    <li>Hành khô băm nhỏ</li>
+                                    <li>Gia vị: dầu ăn, tiêu, muối, đường, bột ngọt, hạt nêm.</li>
+                                </ol>
+                   
+                   
+                    <div class="img">
+                        <img id="minhhoa" src="images/cach-nau-canh-rau-cu-qua-thap-cam-1.jpg">
+                    
+                    </div>
+                    
+                    <li id="tieude">Cách nấu canh rau củ quả thập cẩm với sườn</li>
+                <b id="divb">Bước 1: Sơ chế các nguyên liệu nấu canh</b>
+                    <ol type="a"  class="typea" >
+                        <li>Giò sống ướp với chút hạt nêm, dầu ăn và để trong vòng 15 phút cho ngấm gia vị.</li>
+                        <li>Sườn rửa sạch, để ráo và chặt sườn thăn thành từng miếng vừa ăn.</li>
+                        <li>Nấm đông cô ngâm nước ấm, cắt bỏ chân rồi rửa sạch.</li>
+                        <li>Cà rốt gọt vỏ, rửa sạch, để ráo, cắt khúc hoặc tỉa hoa cho đẹp.</li>
+                        <li>Đậu Hà Lan, bắp non, súp lơ, để ráo, cắt miếng vừa ăn.</li>
+                        <li>Chia giò sống thành từng phần nhỏ và nhồi vào nấm đông cô để không bị trào ra ngoài.</li>
+                        
+                    </ol>
+
+                    <b id="divb">Bước 2: Nấu canh rau củ quả thập cẩm với sườn</b>
+                
+                  
+                    <p>
+                        Bắc chảo lên bếp và đổ thêm dầu đun cho nóng rồi cho hành vào phi thơm. Sau đó, cho sườn thăn vào đảo cùng. Tiếp theo, cho nước vào đun. Khi nước sôi, vớt bọt và nêm chút mì chính, hạt nêm cho vừa ăn. Sau khi thịt sườn thăn mềm, cho nấm đông cô vào nấu khoảng 5 – 10 phút. Sau đó, tiếp tục cho các loại rau còn lại vào cùng một nồi. Nêm nếm thêm gia vị cho vừa ăn rồi để nước sôi trở lại thì tắt bếp.
+                    </p>
+                    <p>
+                        Món canh thập cẩm với sườn ngon ngọt và giàu chất dinh dưỡng rất tốt cho sức khỏe. Để đổi vị cho bữa cơm gia đình, nên bổ sung món ăn này vào thực đơn hàng tuần nhé.
+                    </p>
+    
+                    <div class="img">
+                        <img id="minhhoa" src="images/cach-nau-canh-rau-cu-qua-thap-cam-3-1.jpg">
+                    </div>
+                    <li id="tieude">Món canh rau củ thập cẩm chay thanh mát</li>
+                    
+                    <p>
+                        Cũng với những nguyên liệu sẵn có như cách nấu canh rau củ thập cẩm với sườn như trên, chúng ta hoàn toàn có thể biến tấu thành món canh rau củ quả thập cẩm chay thanh mát cho bữa cơm gia đình. Bởi ăn chay không chỉ dành cho người tu hành mà giờ đây đã thành thói quen của không ít người. Không cầu kỳ trong việc chế biến, chỉ cần thực hiện trong khoảng 30 phút là đã có một món canh chay thập cẩm ngon tuyệt đãi cả nhà rồi.
+                    </p>
+    
+                    <b id="divb">Nguyên liệu nấu canh rau củ thập cẩm chay</b>
+    
+                    
+                        <ol type="a"  class="typea" >
+                            <li>50g nấm hương</li>
+                            <li>Sườn rửa sạch, để ráo và chặt sườn thăn thành từng miếng vừa ăn.</li>
+                            <li>150g bí đao</li>
+                            <li>150g bắp non</li>
+                            <li>1 bìa đậu phụ trắng</li>
+                            <li> Rau mùi</li>
+                            <li>Gia vị chay</li>
+                            
+                        </ol>
+                    
+                        <div class="img">
+                            <img id="minhhoa" src="images/cach-nau-canh-rau-cu-qua-thap-cam-2.jpg">
+                        </div>
+                        <b id="divb">Cách làm món canh rau củ thập cẩm chay</b><br>
+    
+                        <b id="divb">Bước 1: Chuẩn bị nguyên liệu nấu canh</b>
+                        <ol type="i"  class="typea" >
+                            <li>Gọt vỏ cà rốt, tỉa hoa và cắt thành từng khoanh tròn.</li>
+                            <li>Đậu hũ cắt miếng vuông nhỏ.</li>
+                            <li>Nấm hương rửa sạch với nước rồi cắt chân, bổ dọc thân nấm.</li>
+                            <li>Bí đao rửa sạch, cắt khúc.</li>
+                            <li>Bắp bao tử dọc thân.</li>
+                            <li>Rau mùi nhặt bỏ rễ, rửa sạch, thái nhỏ.</li>
+                            
+                        </ol>
+    
+                        <b id="divb">Bước 2: Nấu canh rau củ thập cẩm chay</b>
+                    <p>
+                        Đun sôi khoảng 1 lít nước, sau đó cho bí đao vào nồi, nêm thêm gia vị đun cho đến khi sôi thì vặn lửa nhỏ. Cho hỗn hợp ngô bao tử, cà rốt, nấm hương vào chảo xào cho đến khi các nguyên liệu chín tới. Nêm thêm gia vị cho đậm đà, nếu không có hạt nêm chay thì có thể dùng bột canh thay thế.
+                    </p>
+                    <p>Trút các nguyên liệu đã xào vào nồi bí đang sôi, để lửa nhỏ, đậy vung để rau củ chín. Sau đó cho đậu phụ đã cắt lát vào, nấu khoảng 2 phút thì cho rau mùi vào rồi tắt bếp. Múc canh ra bát và thưởng thức khi canh còn nóng nhé. Món canh rất mát, ăn không bị ngấy, rất thích hợp cho những ngày hè oi bức này đấy.</p>
+    
+                    <div class="img">
+                        <img id="minhhoa" src="images/cach-nau-canh-rau-cu-qua-thap-cam-4.jpg">
+                    </div>
+    
+
+        
+                <div class="nearfooter">
+                <p id="nearfooter">😉Chúc các bạn thành công😉</p></div>
+                <a href="https://mucwomen.com/cach-nau-canh-rau-cu-thap-cam.html" id="nguon"> Nguồn Tại đây</a>
+            </p>
+            </ol>
+            </div>
+            
+
+            <div class="sidebar">
+                
+                <div class="tin">
+                    <div class="decu"><c>Đề Cử</c></div>
+                    <div class="tt">
+                        
+                        <p class="dmnn"><c class="dcmua">Mua Nhiều</c></p><br><br>
+                        <a id="link" href="cachua.html">
+                            <img id="cachua" src="images/cachua.png">
+                            <a class="sp" href="cachua.html">Cà Chua</a></a>
+                       
+                            <a id="link" href="caibexanh.html">
+                            <img id="cachua" src="images/caibexanh.jpg">
+                            <a class="sp" href="caibexanh.html">Cải Bẹ Xanh</a></a>
+                        
+                            <a id="link" href="caibedun.html">
+                            <img id="cachua" src="images/caibedun.jpg" >
+                            <a class="sp" href="caibedun.html">Cải Bẹ</a></a>
+                        
+                            <a id="link" href="sacay.html">
+                            <img id="cachua" src="images/sacay.jpg">
+                            <a class="sp" class="sp" href="sacay.html">Sả Cây</a></a>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+        </main>
+        <footer>
+            <a id="cuahang">Cửa hàng rau sạch, chất lượng hàng đầu Việt Nam</a>
+        </footer>
+    </body>
+</html>

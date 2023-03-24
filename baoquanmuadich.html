@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HKD</title>
+    
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <style>
+        .container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .post{
+            width: 70%;
+            
+            float: left;
+            background-color: rgb(28, 72, 90);
+        }
+        .sidebar{
+            float: right;
+            width: 500px;
+            height: 300px;
+           
+            
+        }
+        header{
+                position: relative;
+                background-image: url("images/4936507_space-wallpaper-1-by-twalls.jpg");
+                height: 240px;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                font-size: 60px;
+                font-weight: bold;
+                text-shadow: 2px 2px 2px #147228;
+               
+            }
+        #hender{
+            position: relative;
+            color: #9af152;
+            top: 0px;
+            animation: hender 2s;
+            animation-fill-mode: forwards;
+
+        }
+        
+        @keyframes hender{
+            form{top: 0%;}
+            to{top: 40%;}
+        }
+        
+
+        footer{
+                
+                background-color: rgb(13, 228, 110);
+                color:#fff;
+                font-weight: bold;
+                height: 30px;
+                text-align: center;
+                border-radius:0 0 8px 8px;
+                
+        }
+        #cuahang{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                position: relative;
+                top: 5px;
+                color: #fff;  
+        }
+        
+        #nguon{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                
+            }
+            #nguon:hover{
+                color: yellow;
+                text-decoration: none;
+            }
+
+            #hinhanh{
+                position: absolute;
+                top: 10px;
+                width: 20%;
+                margin-left: auto;
+                right: 5px;
+                animation: hinhanh 2s;
+                animation-fill-mode: forwards
+            }
+            @keyframes hinhanh{
+                form{right:0%;}
+                to{right: 75%;}
+            }
+
+        
+            body{
+                font-family: 'Noto Sans JP', sans-serif;
+                font-size: 20px;
+                left:auto;
+                right: auto;
+                top: 20px;
+                color: white;
+                border-radius: 10px 10px 10px 10px;
+                box-shadow:0 0 5px 5px #888;
+            }
+            main{
+                background-color: rgb(28, 72, 90);
+                width: 100%;
+               
+                border-radius:0 ;
+            }        
+            
+            
+        .content{
+            text-align:center;
+            color: black;
+            font-weight: bold;
+            font-size: 40px;
+         }
+         #tieude{
+            color: rgb(13, 228, 110);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            
+        }
+        .nearfooter{
+            text-align: center;
+        }
+        #tieude1{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        p {
+            
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 30px; 
+        }
+        .img{
+            text-align: center;
+        }
+
+        #divb{
+            color: rgb(4, 240, 110);
+        }
+
+
+        /*reposive*/
+        @media only screen and (max-width:600px) {
+            .container{
+                display: block;
+            }
+            .post{
+                width: 100%;
+                
+            }
+            .sidebar{
+                display: none;  
+            }
+           
+            
+        }
+
+
+        
+        a{
+            position: relative;
+            bottom: 50px;
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        .sp{
+           position: relative;
+           bottom: 300px;
+           color: #db5050;
+           font-weight: bold;
+           
+            
+        }
+        .sp:hover{
+            border: 2px solid rgb(240, 200, 200);
+            background-color: rgb(224, 215, 215);
+            border-radius: 8px;
+            color: rgb(14, 199, 44);
+        }
+        
+        .tin{
+            position: relative;
+            left: 50px;
+            text-align: center;
+            
+            
+        }
+        .tt{
+            
+            background-color: rgb(15, 49, 63);
+            width: 360px;
+            border-radius: 5px;
+            
+        }
+        .dmnn{
+            position: relative;
+            top: 20px;
+            left: 5px;
+            width: 52%;
+            height: 70px;
+            text-align: center;
+            border-bottom: 40px solid #38b653;
+            border-right: 30px solid transparent; 
+        }
+        .decu{
+            position: relative;
+            top: 71px;
+            width: 359px;
+            height: 50px;
+            background-color: rgb(13, 228, 110);
+            border-radius: 5px 5px 0 0;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        c{
+            position: relative;
+            top: 10px;
+        }
+        .dcmua{
+            position: relative;
+            top: 80px;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #cachua{
+            width: 350px;
+            height: 250px;
+            border-radius: 5px;
+            transition: transform 1s;
+        }
+        #cachua:hover{
+            transform: scale(0.9);
+        }
+        #minhhoa{
+            border-radius: 5px;
+            transition: transform 1s; 
+        }
+        #minhhoa:hover{
+            transform: scale(0.9);
+        }
+        nav{
+            background-color: #38b653;
+        }
+        #hinhanhsalad{
+            
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            
+        }
+        #vto{
+            font-size: 190px;
+            color: rgb(13, 228, 110);
+        }
+        b{
+            font-size: 30px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div id="hender">Cách bảo quản rau củ</div>
+        </header>
+        <nav>
+            <div class="content">
+                <div id="content">Cách bảo quản rau củ tươi lâu dùng trong mùa dịch an toàn nhất</div>
+            </div>
+        </nav>
+        <div id="conten">
+            <img id="hinhanh" src="images/logo1.png" >
+    
+        </div>
+       
+        <main>
+        <div class="container">
+            
+            <div class="post">
+                <ol class="tieude">
+                    <div>
+                    <img id="hinhanhsalad" align="left" src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-10.jpg" width="400px" height="250px" ></div>
+                    
+                    <p>
+                        <p>
+                            <b id="vto">C</b>ứ mỗi lần Tết đến, việc dự trữ thực phẩm - để dùng trong mấy ngày Tết, hầu như chiếm rất nhiều thời 
+                            gian của các chị em nội trợ từ xưa tới nay. 
+                            Vậy đừng bỏ qua mẹo bảo quản rau củ tươi lâu để xài trong mùa Tết này mà Điện máy XANH muốn gửi đến các bạn đọc!
+                        </p>
+
+                        <ol class="tieude">
+
+                            <li id="tieude">Vì sao nên bổ sung rau củ trong mùa dịch?</li>
+                
+                            <p>
+                                Rau củ là một trong những loại thực phẩm thiết yếu và vô cùng quan trong đối với cơ thể. Chúng có nhiều lợi ích cực kỳ tuyệt vời cho thể như tăng sức đề khác, hỗ trợ tiêu hóa, phòng ngừa bệnh tật,... Do đó, việc bổ sung rau củ vào bữa ăn hàng ngày sẽ giúp bạn đỡ ngán hơn và cân bằng các lượng chất hấp thụ bên trong cơ thể.
+                            </p>
+                           
+                            <p>Như lời chia sẻ của Tiến sĩ Nguyễn Thị Lâm (đang công tác tại Viện Dinh dưỡng) rằng: đã có rất nhiều cuộc nghiên cứu cho thấy sự tác động của chất xơ (trong rau củ) đối với nguy cơ mắc bệnh tim mạch.</p>
+                            
+                            <div class="img">
+                                <img id="minhhoa" src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-2.jpg">
+                            
+                            </div>
+                
+                            <li id="tieude">Mẹo bảo quản rau củ tươi lâu</li>
+                            
+                            <p>
+                                Việc dự trữ rau củ là thói quen của nhiều người Việt từ xưa đến nay. Tuy nhiên, không phải ai cũng biết cách bảo quản rau củ được tươi lâu vào những ngày này. Hãy thử vài mẹo ngay dưới đây:
+                            </p>
+                            <b>Loại bỏ những phần bị sâu</b>
+                            <p>
+                                Trước khi bảo quản rau củ được tươi, bạn cần cắt bỏ những chỗ bị sâu, úa có trên rau củ để tránh bị lây sang những chỗ tươi khác trong quá trình bảo quản.
+                            </p>
+                            <p>Có một số loại củ như khoai tây, cà rốt, củ dền,… dù có vết bẩn ở rễ và lớp vỏ nhưng chúng lâu bị hư, chỉ cần rửa sạch sẽ là có thể dùng được. Hãy để những loại củ như vậy ở chỗ thoáng mát, tránh ẩm ướt là được!</p>
+                            <div class="img">
+                                <img id="minhhoa" src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-3.jpg">
+                            
+                            </div>
+                            <b>Phân loại rau, củ</b>
+                
+                            
+                            
+                            <p>
+                                Mỗi loại rau củ đều có cách bảo quản riêng vì điều kiện độ ẩm bảo quản khác nhau. Do đó, không phải lúc nào cũng nghĩ đến việc bảo quản rau, củ cho hết vào túi nilong, rồi bỏ vào tủ lạnh đâu nhé!
+                            </p>
+                
+                            
+                            <p>
+                                Đối với các loại củ tươi như khoai tây, củ dền,… bạn nên đựng trong túi giấy khô màu tối, để nơi thoáng mát, không để sát nền đất vì chúng sẽ nảy mầm và gây ngộ độc.
+                            </p>
+                            
+                            
+                            <p>Ngoài ra, một số người còn có mẹo bảo quản rau củ được bọc trong giấy báo, rồi cho vào túi ni-long, cuối cùng đem bảo quản trong ngăn mát tủ lạnh.</p>
+                            <p>Cách làm này vẫn làm cho rau củ tươi lâu nhưng vẫn nên dè chừng vì mực in trên giấy báo có thể thấm vào rau củ, không tốt cho sức khỏe khi dùng.</p>
+                            <div class="img">
+                                <img id="minhhoa" src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-5.jpg">
+                            
+                            </div>
+                            <p>Đối với các loại củ tươi như khoai tây, củ dền,… bạn nên đựng trong túi giấy khô màu tối, để nơi thoáng mát, không để sát nền đất vì chúng sẽ nảy mầm và gây ngộ độc.</p>
+                            <p>Ngoài ra, một số người còn có mẹo bảo quản rau củ được bọc trong giấy báo, rồi cho vào túi ni-long, cuối cùng đem bảo quản trong ngăn mát tủ lạnh.</p>
+                            <p>Cách làm này vẫn làm cho rau củ tươi lâu nhưng vẫn nên dè chừng vì mực in trên giấy báo có thể thấm vào rau củ, không tốt cho sức khỏe khi dùng.</p>
+                            
+                            <div class="img">
+                                <img id="minhhoa" src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-6.jpg">
+                            
+                            </div>
+                            
+                            <b>Hạn chế sơ chế rau củ trước</b>
+                            <p>Tùy rau, củ như thế nào mà bạn quyết định có nên sơ chế trước hay không? Vì nếu sơ chế như cắt, nhặt, chẻ,… không đúng cách thì dễ làm thực phẩm nhanh chóng bị hư. Đồng thời, theo các nhà nghiên cứu đã khuyến cáo khá nhiều trên phương tiện truyền thông rằng: việc nhặt, cắt rau sẽ làm cho vi khuẩn nhanh chóng sinh sôi nhiều hơn từ chỗ cắt.</p>
+                            <div class="img">
+                                <img id="minhhoa" src="images/Thoigianbaoquan11(13)-800x450.jpg">
+                            
+                            </div>
+                            <b>Gợi ý cho bạn</b>
+                            <p>Rau tươi xanh, không nên rửa, cuốn nhẹ vào 1, 2 lớp giấy (vải sạch) để vào ngăn mát tủ lạnh. Cách này giữ được màu sắc và lượng chất dinh dưỡng khoảng 3 – 4 ngày dù có hơi héo một chút.</p>
+                            <p>Cà chua, nên chọn trái còn xanh, vì để được lâu trong mùa dịch. Nếu bạn muốn chúng chín nhanh, thì để gần với một quả chuối hoặc táo từ 1 đến 2 ngày.</p>
+                            
+                            <div class="img">
+                                <img id="minhhoa" src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-8.jpg">
+                            </div>
+                
+                            <p>
+                                Một số loại đậu như đậu Hà Lan, ớt Đà Lạt,… có thể rửa sạch, cắt thành từng miếng, rồi nhúng vào nồi nước sôi. Tiếp theo là cho vào thau nước đá thật lạnh để làm giảm nhiệt độ đột ngột. Cuối cùng là cho vào túi hay hộp thực phẩm, bảo quản trong ngăn mát tủ lạnh. Cách làm này bảo quản được 2 – 3 ngày!
+                            </p>
+                
+                            <div class="img">
+                                <img src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-9.jpg">
+                            </div>
+                
+                            <b>Chú ý đến nhiệt độ bảo quản</b>
+                            <p>Sự xuất hiện của chiếc tủ lạnh ngày nay không chỉ độc đáo về kiểu dáng mà còn tiện ích bởi công nghệ làm lạnh cho từng loại thực phẩm – rau củ kể cả thịt tươi sống.</p>
+                            <p>Bạn nên duy trì nhiệt độ từ 1 – 4 độ C để bảo quản rau quả. Bởi vì, ở nhiệt độ này, thường vi khuẩn sẽ không phát triển mạnh, làm hư hỏng thực phẩm. Ngoài ra, tránh nhiệt độ hạ xuống quá nhiều, gây đóng băng thực phẩm sẽ làm ảnh hưởng đến hàm lượng dinh dưỡng.</p>
+                            
+                            <div class="img">
+                                <img id="minhhoa" src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-10.jpg">
+                            </div>
+                
+                            <b>Tránh mùi hôi từ rau củ</b>
+                
+                            <p>
+                                Với các loại củ như rau mùi, hành củ, hành lá,… thường có mùi đặc trưng nên khi để vào tủ lạnh sẽ ảnh hưởng đến không khí bên trong tủ.
+                            </p>
+                            <p>Bạn cần để ít bột nổ một góc bên trong tủ, để loại bớt mùi hôi và độ ẩm nhé!</p>
+                            <div class="img">
+                                <img src="images/bí-quyét-bảo-quản-rau-củ-tuoi-lau-12.jpg">
+                            </div>
+                
+                            <b>Nên dự trữ rau củ vừa phải</b>
+                            <p>Bạn hãy tập thói quen mua rau, củ đến đâu thì dùng đến đó. Vì đây là cách tốt nhất để giữ chất dinh dưỡng và bảo quản rau, củ được tươi ngon nhất.</p>
+                
+                            <div class="img">
+                                <img id="minhhoa" src="images/Thoigianbaoquan11(14)-800x450.jpg" >
+                            </div>
+
+
+                <div class="nearfooter">
+                <p id="nearfooter">😉Chúc các bạn thành công😉</p></div>
+                <a href="https://www.dienmayxanh.com/vao-bep/meo-bao-quan-rau-cu-tuoi-lau-dung-trong-mua-tet-nay-00337" id="nguon"> Nguồn Tại đây</a>
+            </p>
+            </ol>
+            </div>
+            
+
+            
+            <div class="sidebar">
+                
+                <div class="tin">
+                    <div class="decu"><c>Đề Cử</c></div>
+                    <div class="tt">
+                        
+                        <p class="dmnn"><c class="dcmua">Mua Nhiều</c></p><br><br>
+                        <a id="link" href="cachua.html">
+                            <img id="cachua" src="images/cachua.png">
+                            <a class="sp" href="cachua.html">Cà Chua</a></a>
+                       
+                            <a id="link" href="caibexanh.html">
+                            <img id="cachua" src="images/caibexanh.jpg">
+                            <a class="sp" href="caibexanh.html">Cải Bẹ Xanh</a></a>
+                        
+                            <a id="link" href="caibedun.html">
+                            <img id="cachua" src="images/caibedun.jpg" >
+                            <a class="sp" href="caibedun.html">Cải Bẹ</a></a>
+                        
+                            <a id="link" href="sacay.html">
+                            <img id="cachua" src="images/sacay.jpg">
+                            <a class="sp" class="sp" href="sacay.html">Sả Cây</a></a>
+                        
+                    </div>
+                    
+                </div>
+            
+        </div>
+        
+        </main>
+        <footer>
+            <a id="cuahang">Cửa hàng rau sạch, chất lượng hàng đầu Việt Nam</a>
+        </footer>
+    </body>
+</html>
